@@ -1,0 +1,7 @@
+C:\Users\balazs.david.420\source\repos\Osztályokű\bin\Debug\Osztályokű.exe.config
+C:\Users\balazs.david.420\source\repos\Osztályokű\bin\Debug\Osztályokű.exe
+C:\Users\balazs.david.420\source\repos\Osztályokű\bin\Debug\Osztályokű.pdb
+C:\Users\balazs.david.420\source\repos\Osztályokű\obj\Debug\Osztályokű.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\Osztályokű\obj\Debug\Osztályokű.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\Osztályokű\obj\Debug\Osztályokű.exe
+C:\Users\balazs.david.420\source\repos\Osztályokű\obj\Debug\Osztályokű.pdb

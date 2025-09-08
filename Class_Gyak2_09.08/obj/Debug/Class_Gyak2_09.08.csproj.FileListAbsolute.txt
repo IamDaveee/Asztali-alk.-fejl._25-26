@@ -1,0 +1,7 @@
+C:\Users\balazs.david.420\source\repos\Class_Gyak2_09.08\bin\Debug\Class_Gyak2_09.08.exe.config
+C:\Users\balazs.david.420\source\repos\Class_Gyak2_09.08\bin\Debug\Class_Gyak2_09.08.exe
+C:\Users\balazs.david.420\source\repos\Class_Gyak2_09.08\bin\Debug\Class_Gyak2_09.08.pdb
+C:\Users\balazs.david.420\source\repos\Class_Gyak2_09.08\obj\Debug\Class_Gyak2_09.08.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\Class_Gyak2_09.08\obj\Debug\Class_Gyak2_09.08.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\Class_Gyak2_09.08\obj\Debug\Class_Gyak2_09.08.exe
+C:\Users\balazs.david.420\source\repos\Class_Gyak2_09.08\obj\Debug\Class_Gyak2_09.08.pdb
