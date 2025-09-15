@@ -1,0 +1,25 @@
+1.)
+Hozz létre egy Haz osztályt, amely a következő adattagokat tartalmazza:
+
+cim – szöveges
+szobakSzama – egész szám
+lakokSzama – egész szám
+
+2.)
+Az osztálynak legyen egy paraméteres konstruktora, amely beállítja az összes adattag értékét a paramétereken keresztül!
+
+3.) 
+Az osztályhoz tartozzon egy másik paraméteres konstruktor is, amely a cimet, és a lakokSzama mezőket állítja be. Ebben az esetben a szobakSzama adattag értéke legyen 2!
+
+4.)
+Készítsen egy koltozik() metódust, amely növeli a lakók számát a metódus paraméterként kapott értékkel.
+
+5.)
+Készítsen egy KiKoltozik() metódust, amely csökkenti a lakók számát a paraméterként kapott értékkel. A lakók száma nem lehet negatív értékű, ezért a csökkentésnél ügyeljen arra, hogy legyen elegendő lakó a házban! Ellenkező esetben írja képernyőre, hogy ennyien nem laknak a házban!
+
+6.)
+Készítsen egy Kiir() metódust, amely kiírja a ház adatait.
+
+
+7.) 
+Hozzon létre két házat, és szimuláld a költözéseket.

@@ -1,0 +1,32 @@
+1.)
+Készítsen egy Nyomtato nevű osztályt, amely az alábbi adattagokat tartalmazza:
+
+gyarto – szöveges típus (pl. HP, Canon)
+modell – szöveges típus (pl. LaserJet 1020)
+tipus – szöveges típus (pl. lézer, tintasugaras)
+sebesseg – egész szám (oldal/perc)
+kapacitas – egész szám (maximum papírmennyiség)
+
+2.)
+Készítsen az osztályhoz paraméteres konstruktort, amely lehetővé teszi az adattagok inicializálását.
+
+3.)
+Készítsen egy szöveges visszatérési értékkel rendelkező metódust Adatok() néven, amely kiírja a nyomtató adatait a képernyőre.
+
+4.)
+Készítsen egy metódust FrissitKapacitas() néven, amely megnöveli a nyomtató kapacitását a paraméterként kapott értékkel.
+
+5.) 
+Hozzon létre egy példányt az alábbi adatokkal:
+
+Gyártó: HP
+Modell: LaserJet 1020
+Típus: lézer
+Sebesség: 20 oldal/perc
+Kapacitás: 250 lap
+
+6.)
+Kérjen be adatokat a felhasználótól egy második nyomtató példányhoz.
+
+7.)
+Növelje mindkét példány kapacitását 100 lappal, majd jelenítse meg újra az adatokat.

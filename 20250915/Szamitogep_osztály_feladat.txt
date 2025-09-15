@@ -1,0 +1,21 @@
+1.)
+
+Készítsen egy Szamitogep osztályt, amely az alábbi adattagokkal rendelkezik:
+- alaplap - szöveges típus
+- processzor - szöveges típus
+- videokartya - szöveges típus
+- memoriaMerete - egész szám
+- hdd - egész szám
+
+Készítse el az osztály paraméteres konstruktorát, amely lehetővé teszi a kezdőértékek inicializálását!
+
+Készítsen egy Megjelenít() metódust, amely képernyőre írja az osztály példányainak mezőit!
+
+Készítsen egy Novel() metódust, amely a memória méretét növeli meg a metódus paramétereként átadott értékkel!
+
+Tesztelje az osztályt az alábbi adatokkal:
+1.) ASUS alaplap, Intel processzor, GTX1050 videokártya, memórai mérete: 16 GB, HDD mérete: 500 GB
+
+2.) billentyűzetről kérjen be adatokat, és tárolja el egy Szamitogep típusú változóban! 
+
+3.) Emelje meg mindkét példány memóriaméretét 32 GB-tal, majd jelenítse meg újra az adatokat!

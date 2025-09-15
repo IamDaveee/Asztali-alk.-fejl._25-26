@@ -1,0 +1,21 @@
+1.)
+Hozzon létre egy Konyv osztályt, amely a következő publikus mezőket tartalmazza:
+- cím (szöveg) - a könyv címe
+- szerző (szöveg) - a könyv szerzője
+- oldalszam (egész szám) - a könyv teljes mérete
+- olvasottOldalak (egész szám) - az olvasó által elolvasott oldalak száma
+
+2.)
+Készítsen az osztályhoz egy konstruktort, amely paramétereken keresztül állítja be az adatmezők kezdőértékét!
+
+3.)
+Készítsen egy Megjelenít() metódust, amely megjeleníti egy könyv adatait, és azt, hogy elolvasták-e a könyvet!
+
+4.)
+Készítsen egy Olvas() metódust, amely paraméterként kap egy oldalszámot, és hozzáadja az olvasott oldalakhoz. Ha elérte a könyv maximális oldalszámát, akkor jelezze a felhasználó számára egy üzenettel, és ne végezze el az összeadást!
+
+5.)
+Készítsen egy keszVanE() logikai típusú visszatérési értékkel rendelkező metódust, amely visszaadja, hogy el lett-e olvasva a könyv.
+
+6.)
+Tesztelje az osztály fix és billentyűzetről bekért adatokkal!

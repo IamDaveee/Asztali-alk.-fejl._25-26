@@ -1,0 +1,20 @@
+1.)
+Hozzon létre egy Ital osztályt, amely a következő publikus mezőket tartalmazza:
+- név(szöveg) - az ital neve
+- mennyiség (valós) - a rendelkezésre álló mennyiség értéke literben kifejezve
+- alkoholosE (logikai) - azt jelzi, hogy az ital tartalmazott-e alkoholt vagy sem.
+
+2.)
+Készítsen az osztályhoz egy konstruktort, amely paramétereken keresztül állítja be az adatmezők kezdőértékét!
+
+3.)
+Készítsen egy Megjelenít() metódust, amely megjeleníti egy ital adatait!
+
+4.)
+Készítsen egy Iszik(), amely  csökkenti a mennyiséget a paraméterként kapott értékkel, ha van elég ital!
+
+5.)
+Készítsen egy Feltolt() metódust, amely 100 literre feltölti a mennyiséget, ha az ital alkoholos és elfogyott!
+
+6.)
+Tesztelje az osztály fix és billentyűzetről bekért adatokkal!
