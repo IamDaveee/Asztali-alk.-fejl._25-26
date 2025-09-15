@@ -18,6 +18,11 @@ namespace Class_Gyak03
             this.fizetes = fizetes;
         }
 
+        public Dolgozok()
+        {
+
+        }
+
         public void Kiir()
         {
             Console.WriteLine($"Dolgozó neve: {nev}, Munkaköre: {munkakör}, Fizetése: {fizetes}");
