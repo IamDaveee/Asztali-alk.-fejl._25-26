@@ -23,6 +23,14 @@ namespace Class_Gyak03
 
         }
 
+        public Dolgozok(string sor)
+        {
+            string[] Egysor = sor.Split('\t');
+            nev = Egysor[0];
+            munkakör = Egysor[1];
+            fizetes = Convert.ToInt32(Egysor[2]);
+        }
+
         public void Kiir()
         {
             Console.WriteLine($"Dolgozó neve: {nev}, Munkaköre: {munkakör}, Fizetése: {fizetes}");

@@ -1,0 +1,5 @@
+Géza	raktáros	150000
+Joli	pénztáros	185000
+Ildikó	titkárnő	99000
+Sanyi	kukás	380000
+Ricsike	munkaképes	1000000
