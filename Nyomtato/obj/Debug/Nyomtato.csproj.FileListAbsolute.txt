@@ -1,0 +1,7 @@
+C:\Users\balazs.david.420\source\repos\Nyomtato\bin\Debug\Nyomtato.exe.config
+C:\Users\balazs.david.420\source\repos\Nyomtato\bin\Debug\Nyomtato.exe
+C:\Users\balazs.david.420\source\repos\Nyomtato\bin\Debug\Nyomtato.pdb
+C:\Users\balazs.david.420\source\repos\Nyomtato\obj\Debug\Nyomtato.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\Nyomtato\obj\Debug\Nyomtato.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\Nyomtato\obj\Debug\Nyomtato.exe
+C:\Users\balazs.david.420\source\repos\Nyomtato\obj\Debug\Nyomtato.pdb

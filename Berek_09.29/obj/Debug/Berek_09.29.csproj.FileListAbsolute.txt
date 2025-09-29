@@ -1,0 +1,7 @@
+C:\Users\balazs.david.420\source\repos\Berek_09.29\bin\Debug\Berek_09.29.exe.config
+C:\Users\balazs.david.420\source\repos\Berek_09.29\bin\Debug\Berek_09.29.exe
+C:\Users\balazs.david.420\source\repos\Berek_09.29\bin\Debug\Berek_09.29.pdb
+C:\Users\balazs.david.420\source\repos\Berek_09.29\obj\Debug\Berek_09.29.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\Berek_09.29\obj\Debug\Berek_09.29.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\Berek_09.29\obj\Debug\Berek_09.29.exe
+C:\Users\balazs.david.420\source\repos\Berek_09.29\obj\Debug\Berek_09.29.pdb
