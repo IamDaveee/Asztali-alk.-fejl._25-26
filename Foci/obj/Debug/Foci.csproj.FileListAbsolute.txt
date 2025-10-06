@@ -1,0 +1,7 @@
+C:\Users\balazs.david.420\source\repos\Foci\bin\Debug\Foci.exe.config
+C:\Users\balazs.david.420\source\repos\Foci\bin\Debug\Foci.exe
+C:\Users\balazs.david.420\source\repos\Foci\bin\Debug\Foci.pdb
+C:\Users\balazs.david.420\source\repos\Foci\obj\Debug\Foci.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\Foci\obj\Debug\Foci.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\Foci\obj\Debug\Foci.exe
+C:\Users\balazs.david.420\source\repos\Foci\obj\Debug\Foci.pdb
