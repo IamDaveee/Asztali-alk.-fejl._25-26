@@ -1,0 +1,7 @@
+C:\Users\balazs.david.420\source\repos\EU\bin\Debug\EU.exe.config
+C:\Users\balazs.david.420\source\repos\EU\bin\Debug\EU.exe
+C:\Users\balazs.david.420\source\repos\EU\bin\Debug\EU.pdb
+C:\Users\balazs.david.420\source\repos\EU\obj\Debug\EU.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\EU\obj\Debug\EU.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\EU\obj\Debug\EU.exe
+C:\Users\balazs.david.420\source\repos\EU\obj\Debug\EU.pdb
