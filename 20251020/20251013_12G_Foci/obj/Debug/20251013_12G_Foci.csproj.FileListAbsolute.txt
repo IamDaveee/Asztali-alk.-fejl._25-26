@@ -1,0 +1,7 @@
+C:\Users\janus.marta\source\repos\20251013_12G_Foci\bin\Debug\20251013_12G_Foci.exe.config
+C:\Users\janus.marta\source\repos\20251013_12G_Foci\bin\Debug\20251013_12G_Foci.exe
+C:\Users\janus.marta\source\repos\20251013_12G_Foci\bin\Debug\20251013_12G_Foci.pdb
+C:\Users\janus.marta\source\repos\20251013_12G_Foci\obj\Debug\20251013_12G_Foci.csproj.AssemblyReference.cache
+C:\Users\janus.marta\source\repos\20251013_12G_Foci\obj\Debug\20251013_12G_Foci.csproj.CoreCompileInputs.cache
+C:\Users\janus.marta\source\repos\20251013_12G_Foci\obj\Debug\20251013_12G_Foci.exe
+C:\Users\janus.marta\source\repos\20251013_12G_Foci\obj\Debug\20251013_12G_Foci.pdb
