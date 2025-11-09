@@ -1,0 +1,7 @@
+C:\Users\Dávid\source\repos\Hegyek\bin\Debug\Hegyek.exe.config
+C:\Users\Dávid\source\repos\Hegyek\bin\Debug\Hegyek.exe
+C:\Users\Dávid\source\repos\Hegyek\bin\Debug\Hegyek.pdb
+C:\Users\Dávid\source\repos\Hegyek\obj\Debug\Hegyek.csproj.AssemblyReference.cache
+C:\Users\Dávid\source\repos\Hegyek\obj\Debug\Hegyek.csproj.CoreCompileInputs.cache
+C:\Users\Dávid\source\repos\Hegyek\obj\Debug\Hegyek.exe
+C:\Users\Dávid\source\repos\Hegyek\obj\Debug\Hegyek.pdb
