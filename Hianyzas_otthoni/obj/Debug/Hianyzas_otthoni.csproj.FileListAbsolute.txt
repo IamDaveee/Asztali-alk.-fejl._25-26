@@ -1,0 +1,8 @@
+C:\Users\Dávid\source\repos\Hianyzas_otthoni\bin\Debug\Hianyzas_otthoni.exe.config
+C:\Users\Dávid\source\repos\Hianyzas_otthoni\bin\Debug\Hianyzas_otthoni.exe
+C:\Users\Dávid\source\repos\Hianyzas_otthoni\bin\Debug\Hianyzas_otthoni.pdb
+C:\Users\Dávid\source\repos\Hianyzas_otthoni\obj\Debug\Hianyzas_otthoni.csproj.AssemblyReference.cache
+C:\Users\Dávid\source\repos\Hianyzas_otthoni\obj\Debug\Hianyzas_otthoni.csproj.CoreCompileInputs.cache
+C:\Users\Dávid\source\repos\Hianyzas_otthoni\obj\Debug\Hianyzas_otthoni.exe
+C:\Users\Dávid\source\repos\Hianyzas_otthoni\obj\Debug\Hianyzas_otthoni.pdb
+C:\Users\Dávid\source\repos\Hianyzas_otthoni\obj\Debug\Hianyzas_otthoni.exe.config
