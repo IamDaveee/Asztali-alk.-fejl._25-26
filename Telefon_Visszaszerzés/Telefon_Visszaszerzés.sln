@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35229.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telefon_Visszaszerzés", "Telefon_Visszaszerzés.csproj", "{1CA86263-AEBB-4E33-8291-84457A6D953D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CA86263-AEBB-4E33-8291-84457A6D953D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA86263-AEBB-4E33-8291-84457A6D953D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA86263-AEBB-4E33-8291-84457A6D953D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA86263-AEBB-4E33-8291-84457A6D953D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64BD49C1-D4AF-4D6D-A666-857B222E536D}
+	EndGlobalSection
+EndGlobal

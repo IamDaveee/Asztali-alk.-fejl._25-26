@@ -1,0 +1,7 @@
+C:\Users\balazs.david.420\source\repos\Telefon_Visszaszerzés\obj\Debug\Telefon_Visszaszerzés.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\Telefon_Visszaszerzés\obj\Debug\Telefon_Visszaszerzés.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\Telefon_Visszaszerzés\bin\Debug\Telefon_Visszaszerzés.exe.config
+C:\Users\balazs.david.420\source\repos\Telefon_Visszaszerzés\bin\Debug\Telefon_Visszaszerzés.exe
+C:\Users\balazs.david.420\source\repos\Telefon_Visszaszerzés\bin\Debug\Telefon_Visszaszerzés.pdb
+C:\Users\balazs.david.420\source\repos\Telefon_Visszaszerzés\obj\Debug\Telefon_Visszaszerzés.exe
+C:\Users\balazs.david.420\source\repos\Telefon_Visszaszerzés\obj\Debug\Telefon_Visszaszerzés.pdb
