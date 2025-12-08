@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\Grafikus_Gyak\bin\Debug\Grafikus_Gyak.exe.config
+C:\Users\balazs.david.420\source\repos\Grafikus_Gyak\bin\Debug\Grafikus_Gyak.exe
+C:\Users\balazs.david.420\source\repos\Grafikus_Gyak\bin\Debug\Grafikus_Gyak.pdb
+C:\Users\balazs.david.420\source\repos\Grafikus_Gyak\obj\Debug\Grafikus_Gyak.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\Grafikus_Gyak\obj\Debug\Grafikus_Gyak.Form1.resources
+C:\Users\balazs.david.420\source\repos\Grafikus_Gyak\obj\Debug\Grafikus_Gyak.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\Grafikus_Gyak\obj\Debug\Grafikus_Gyak.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\Grafikus_Gyak\obj\Debug\Grafikus_Gyak.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\Grafikus_Gyak\obj\Debug\Grafikus_Gyak.exe
+C:\Users\balazs.david.420\source\repos\Grafikus_Gyak\obj\Debug\Grafikus_Gyak.pdb
