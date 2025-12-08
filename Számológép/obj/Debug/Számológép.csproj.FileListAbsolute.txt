@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\Számológép\bin\Debug\Számológép.exe.config
+C:\Users\balazs.david.420\source\repos\Számológép\bin\Debug\Számológép.exe
+C:\Users\balazs.david.420\source\repos\Számológép\bin\Debug\Számológép.pdb
+C:\Users\balazs.david.420\source\repos\Számológép\obj\Debug\Számológép.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\Számológép\obj\Debug\Számológép.Form1.resources
+C:\Users\balazs.david.420\source\repos\Számológép\obj\Debug\Számológép.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\Számológép\obj\Debug\Számológép.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\Számológép\obj\Debug\Számológép.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\Számológép\obj\Debug\Számológép.exe
+C:\Users\balazs.david.420\source\repos\Számológép\obj\Debug\Számológép.pdb
