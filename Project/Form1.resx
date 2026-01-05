@@ -121,7 +121,7 @@
     <value>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="panelInfoTerem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkK
         DA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkLEBAQEBAQEBAQEBAQ
@@ -1874,5 +1874,11 @@
   </data>
   <data name="textBox1.Text" xml:space="preserve">
     <value>Az iskolában vagyunk, 7. óra informatika. Az egyik óra elején a tanár rajtakap, hogy az órán a telefonodat nyomkodod, ezért „példastatuálásként” elveszi, és azt mondja: „A telefonod mostantól biztonságban van nálam, a tanáriban. Ha ennyire fontos neked, talán meg is tudod szerezni… ha elég ügyes vagy.” Délutánra az iskola már üres, a takarítók is lassan végeznek. A főkaput már bezárták, de te bent ragadtál az informatikateremben. Egyetlen célod van: **visszaszerezni a telefont a tanári szobából**, mielőtt a biztonsági őr körbejár, és észrevesz. Tét: ha nem sikerül 15 percen belül módot találni a telefon visszaszerzésére, a tanár másnap az igazgatónál jelenti az esetet → „Game Over”.</value>
+  </data>
+  <data name="txtNote2.Text" xml:space="preserve">
+    <value>A 206-os informatika teremben található fiók kódját naponta változtatják. Még jó hogy a dátum alapján le lehet követni. Elég egybe fűzni a számokat, mint a string összeaadásnál, és a végén a terem száma foglal helyet. A dátumba nem kell "0" a hónapok és napok elé. Az első hónap 5. napja 15 és nem 0105</value>
+  </data>
+  <data name="txtNote1.Text" xml:space="preserve">
+    <value>A környezeti diagram (vagy kontextusdiagram) egy olyan magas szintű ábra, amely a rendszerünket mint egy fekete dobozt jeleníti meg a külső környezetében. Ez a diagram arra szolgál, hogy elhatároljuk, mi tartozik a rendszerünk hatókörébe és mi van azon kívül. Ábrázolja a rendszer és a külső entitások (szereplők, más rendszerek) közötti kapcsolatokat, tipikusan adat- vagy információáramlás formájában. A környezeti diagramot sokszor a legfelső szintű folyamatábrának tekintik (0. szintű DFD), amely a teljes rendszer áttekintését adja. Mivel nagyon egyszerű a felépítése – rendszerint egyetlen központi elem (a rendszer) és a hozzá kapcsolódó néhány külső objektum látható – ezért könnyen érthető nem műszaki (üzleti) érdekelt felek számára is. Célja és feladata: a rendszer környezetének ismertetése, azaz megmutatni a rendszer határait és a külső interfészeket. Segítségével a projekt elején tisztázható, hogy mely szereplők (pl. ügyfelek, partnerek, más rendszerek) lépnek kapcsolatba a rendszerrel, és milyen információt adnak vagy kapnak tőle. Így a környezeti diagram megalapozza a részletesebb követelményelemzést és a rendszertervezést – lényegében keretet ad a részletes use case-ek és folyamatmodellek számára.</value>
   </data>
 </root>

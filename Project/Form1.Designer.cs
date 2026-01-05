@@ -40,21 +40,27 @@ namespace Project
             this.label5 = new System.Windows.Forms.Label();
             this.szabalyLeiras = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.lblNotes = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtNote1 = new System.Windows.Forms.TextBox();
-            this.btnNoteForward = new System.Windows.Forms.Button();
-            this.btnNoteBack = new System.Windows.Forms.Button();
-            this.txtNote2 = new System.Windows.Forms.TextBox();
+            this.panelInfoTerem = new System.Windows.Forms.Panel();
             this.btnNoteExit = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnNoteBack = new System.Windows.Forms.Button();
+            this.btnNoteForward = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtNote2 = new System.Windows.Forms.TextBox();
+            this.txtNote1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblNotes = new System.Windows.Forms.Label();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblFolyosó = new System.Windows.Forms.Label();
+            this.btnFiok = new System.Windows.Forms.Button();
+            this.lblCode = new System.Windows.Forms.Label();
+            this.txtCode = new System.Windows.Forms.TextBox();
+            this.btnOpen = new System.Windows.Forms.Button();
+            this.btnExitCode = new System.Windows.Forms.Button();
+            this.panelInfoTerem.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -167,136 +173,30 @@ namespace Project
             this.btnBack.Visible = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // panel1
+            // panelInfoTerem
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.btnNoteExit);
-            this.panel1.Controls.Add(this.btnNoteBack);
-            this.panel1.Controls.Add(this.btnNoteForward);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.lblNotes);
-            this.panel1.Controls.Add(this.btnNext);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 460);
-            this.panel1.TabIndex = 10;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(269, 22);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(217, 32);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Kiinduló helyzet";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(242, 66);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(296, 372);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
-            // 
-            // btnNext
-            // 
-            this.btnNext.Location = new System.Drawing.Point(544, 415);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 23);
-            this.btnNext.TabIndex = 4;
-            this.btnNext.Text = "Tovább";
-            this.btnNext.UseVisualStyleBackColor = true;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // lblNotes
-            // 
-            this.lblNotes.AutoSize = true;
-            this.lblNotes.Location = new System.Drawing.Point(163, 171);
-            this.lblNotes.Name = "lblNotes";
-            this.lblNotes.Size = new System.Drawing.Size(55, 13);
-            this.lblNotes.TabIndex = 5;
-            this.lblNotes.Text = "Jegyzetek";
-            this.lblNotes.Visible = false;
-            this.lblNotes.Click += new System.EventHandler(this.lblNotes_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(242, 66);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(296, 372);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.txtNote2);
-            this.panel2.Controls.Add(this.txtNote1);
-            this.panel2.Location = new System.Drawing.Point(327, 122);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(107, 244);
-            this.panel2.TabIndex = 7;
-            this.panel2.Visible = false;
-            // 
-            // txtNote1
-            // 
-            this.txtNote1.BackColor = System.Drawing.Color.White;
-            this.txtNote1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNote1.Location = new System.Drawing.Point(0, 0);
-            this.txtNote1.Multiline = true;
-            this.txtNote1.Name = "txtNote1";
-            this.txtNote1.ReadOnly = true;
-            this.txtNote1.Size = new System.Drawing.Size(107, 244);
-            this.txtNote1.TabIndex = 0;
-            this.txtNote1.Text = "Jegyzetek a jegyzetfüzetben nagyon picivel írva";
-            // 
-            // btnNoteForward
-            // 
-            this.btnNoteForward.Location = new System.Drawing.Point(544, 415);
-            this.btnNoteForward.Name = "btnNoteForward";
-            this.btnNoteForward.Size = new System.Drawing.Size(75, 23);
-            this.btnNoteForward.TabIndex = 8;
-            this.btnNoteForward.Text = "Tovább";
-            this.btnNoteForward.UseVisualStyleBackColor = true;
-            this.btnNoteForward.Visible = false;
-            this.btnNoteForward.Click += new System.EventHandler(this.btnNoteForward_Click);
-            // 
-            // btnNoteBack
-            // 
-            this.btnNoteBack.Location = new System.Drawing.Point(161, 415);
-            this.btnNoteBack.Name = "btnNoteBack";
-            this.btnNoteBack.Size = new System.Drawing.Size(75, 23);
-            this.btnNoteBack.TabIndex = 9;
-            this.btnNoteBack.Text = "Vissza";
-            this.btnNoteBack.UseVisualStyleBackColor = true;
-            this.btnNoteBack.Visible = false;
-            this.btnNoteBack.Click += new System.EventHandler(this.btnNoteBack_Click);
-            // 
-            // txtNote2
-            // 
-            this.txtNote2.BackColor = System.Drawing.Color.White;
-            this.txtNote2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNote2.Location = new System.Drawing.Point(0, 0);
-            this.txtNote2.Multiline = true;
-            this.txtNote2.Name = "txtNote2";
-            this.txtNote2.ReadOnly = true;
-            this.txtNote2.Size = new System.Drawing.Size(107, 244);
-            this.txtNote2.TabIndex = 1;
-            this.txtNote2.Text = "Jegyzetfüzet második oldala";
-            this.txtNote2.Visible = false;
+            this.panelInfoTerem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelInfoTerem.BackgroundImage")));
+            this.panelInfoTerem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelInfoTerem.Controls.Add(this.btnExitCode);
+            this.panelInfoTerem.Controls.Add(this.btnOpen);
+            this.panelInfoTerem.Controls.Add(this.txtCode);
+            this.panelInfoTerem.Controls.Add(this.lblCode);
+            this.panelInfoTerem.Controls.Add(this.btnFiok);
+            this.panelInfoTerem.Controls.Add(this.lblFolyosó);
+            this.panelInfoTerem.Controls.Add(this.btnNoteExit);
+            this.panelInfoTerem.Controls.Add(this.btnNoteBack);
+            this.panelInfoTerem.Controls.Add(this.btnNoteForward);
+            this.panelInfoTerem.Controls.Add(this.panel2);
+            this.panelInfoTerem.Controls.Add(this.pictureBox1);
+            this.panelInfoTerem.Controls.Add(this.lblNotes);
+            this.panelInfoTerem.Controls.Add(this.btnNext);
+            this.panelInfoTerem.Controls.Add(this.textBox1);
+            this.panelInfoTerem.Controls.Add(this.label6);
+            this.panelInfoTerem.Location = new System.Drawing.Point(0, 0);
+            this.panelInfoTerem.Margin = new System.Windows.Forms.Padding(0);
+            this.panelInfoTerem.Name = "panelInfoTerem";
+            this.panelInfoTerem.Size = new System.Drawing.Size(800, 460);
+            this.panelInfoTerem.TabIndex = 10;
             // 
             // btnNoteExit
             // 
@@ -309,13 +209,187 @@ namespace Project
             this.btnNoteExit.Visible = false;
             this.btnNoteExit.Click += new System.EventHandler(this.btnNoteExit_Click);
             // 
+            // btnNoteBack
+            // 
+            this.btnNoteBack.Location = new System.Drawing.Point(161, 415);
+            this.btnNoteBack.Name = "btnNoteBack";
+            this.btnNoteBack.Size = new System.Drawing.Size(75, 23);
+            this.btnNoteBack.TabIndex = 9;
+            this.btnNoteBack.Text = "Vissza";
+            this.btnNoteBack.UseVisualStyleBackColor = true;
+            this.btnNoteBack.Visible = false;
+            this.btnNoteBack.Click += new System.EventHandler(this.btnNoteBack_Click);
+            // 
+            // btnNoteForward
+            // 
+            this.btnNoteForward.Location = new System.Drawing.Point(544, 415);
+            this.btnNoteForward.Name = "btnNoteForward";
+            this.btnNoteForward.Size = new System.Drawing.Size(75, 23);
+            this.btnNoteForward.TabIndex = 8;
+            this.btnNoteForward.Text = "Tovább";
+            this.btnNoteForward.UseVisualStyleBackColor = true;
+            this.btnNoteForward.Visible = false;
+            this.btnNoteForward.Click += new System.EventHandler(this.btnNoteForward_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.txtNote2);
+            this.panel2.Controls.Add(this.txtNote1);
+            this.panel2.Location = new System.Drawing.Point(322, 109);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(127, 273);
+            this.panel2.TabIndex = 7;
+            this.panel2.Visible = false;
+            // 
+            // txtNote2
+            // 
+            this.txtNote2.BackColor = System.Drawing.Color.White;
+            this.txtNote2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNote2.Location = new System.Drawing.Point(0, 0);
+            this.txtNote2.Multiline = true;
+            this.txtNote2.Name = "txtNote2";
+            this.txtNote2.ReadOnly = true;
+            this.txtNote2.Size = new System.Drawing.Size(127, 273);
+            this.txtNote2.TabIndex = 1;
+            this.txtNote2.Text = resources.GetString("txtNote2.Text");
+            this.txtNote2.Visible = false;
+            // 
+            // txtNote1
+            // 
+            this.txtNote1.BackColor = System.Drawing.Color.White;
+            this.txtNote1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNote1.Location = new System.Drawing.Point(0, 0);
+            this.txtNote1.Multiline = true;
+            this.txtNote1.Name = "txtNote1";
+            this.txtNote1.ReadOnly = true;
+            this.txtNote1.Size = new System.Drawing.Size(127, 273);
+            this.txtNote1.TabIndex = 0;
+            this.txtNote1.Text = resources.GetString("txtNote1.Text");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(242, 66);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(296, 372);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            // 
+            // lblNotes
+            // 
+            this.lblNotes.AutoSize = true;
+            this.lblNotes.Location = new System.Drawing.Point(163, 171);
+            this.lblNotes.Name = "lblNotes";
+            this.lblNotes.Size = new System.Drawing.Size(55, 13);
+            this.lblNotes.TabIndex = 5;
+            this.lblNotes.Text = "Jegyzetek";
+            this.lblNotes.Visible = false;
+            this.lblNotes.Click += new System.EventHandler(this.lblNotes_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.Location = new System.Drawing.Point(544, 415);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(75, 23);
+            this.btnNext.TabIndex = 4;
+            this.btnNext.Text = "Tovább";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox1.Location = new System.Drawing.Point(242, 66);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(296, 372);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(269, 22);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(216, 32);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Kiinduló helyzet";
+            // 
+            // lblFolyosó
+            // 
+            this.lblFolyosó.AutoSize = true;
+            this.lblFolyosó.Location = new System.Drawing.Point(482, 149);
+            this.lblFolyosó.Name = "lblFolyosó";
+            this.lblFolyosó.Size = new System.Drawing.Size(43, 13);
+            this.lblFolyosó.TabIndex = 11;
+            this.lblFolyosó.Text = "Folyosó";
+            this.lblFolyosó.Visible = false;
+            this.lblFolyosó.Click += new System.EventHandler(this.lblFolyosó_Click);
+            // 
+            // btnFiok
+            // 
+            this.btnFiok.Location = new System.Drawing.Point(348, 415);
+            this.btnFiok.Name = "btnFiok";
+            this.btnFiok.Size = new System.Drawing.Size(75, 23);
+            this.btnFiok.TabIndex = 12;
+            this.btnFiok.Text = "Fiók";
+            this.btnFiok.UseVisualStyleBackColor = true;
+            this.btnFiok.Visible = false;
+            this.btnFiok.Click += new System.EventHandler(this.btnFiok_Click);
+            // 
+            // lblCode
+            // 
+            this.lblCode.AutoSize = true;
+            this.lblCode.Location = new System.Drawing.Point(370, 392);
+            this.lblCode.Name = "lblCode";
+            this.lblCode.Size = new System.Drawing.Size(29, 13);
+            this.lblCode.TabIndex = 2;
+            this.lblCode.Text = "Kód:";
+            this.lblCode.Visible = false;
+            // 
+            // txtCode
+            // 
+            this.txtCode.Location = new System.Drawing.Point(335, 417);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(100, 20);
+            this.txtCode.TabIndex = 13;
+            this.txtCode.Visible = false;
+            // 
+            // btnOpen
+            // 
+            this.btnOpen.Location = new System.Drawing.Point(544, 414);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(75, 23);
+            this.btnOpen.TabIndex = 14;
+            this.btnOpen.Text = "Nyitás";
+            this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Visible = false;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // btnExitCode
+            // 
+            this.btnExitCode.Location = new System.Drawing.Point(161, 414);
+            this.btnExitCode.Name = "btnExitCode";
+            this.btnExitCode.Size = new System.Drawing.Size(75, 23);
+            this.btnExitCode.TabIndex = 15;
+            this.btnExitCode.Text = "Vissza";
+            this.btnExitCode.UseVisualStyleBackColor = true;
+            this.btnExitCode.Visible = false;
+            this.btnExitCode.Click += new System.EventHandler(this.btnExitCode_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelInfoTerem);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.szabalyLeiras);
             this.Controls.Add(this.label5);
@@ -329,11 +403,11 @@ namespace Project
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelInfoTerem.ResumeLayout(false);
+            this.panelInfoTerem.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,7 +425,7 @@ namespace Project
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox szabalyLeiras;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelInfoTerem;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.TextBox textBox1;
@@ -363,6 +437,12 @@ namespace Project
         private System.Windows.Forms.Button btnNoteForward;
         private System.Windows.Forms.TextBox txtNote2;
         private System.Windows.Forms.Button btnNoteExit;
+        private System.Windows.Forms.Label lblFolyosó;
+        private System.Windows.Forms.Button btnFiok;
+        private System.Windows.Forms.Button btnOpen;
+        private System.Windows.Forms.TextBox txtCode;
+        private System.Windows.Forms.Label lblCode;
+        private System.Windows.Forms.Button btnExitCode;
     }
 }
 

@@ -57,17 +57,12 @@ namespace Project
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            panel1.Visible = true;
-        }
-
-        private void panel2_Click(object sender, EventArgs e)
-        {
-            panel1.Visible = false;
+            panelInfoTerem.Visible = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            panel1.Visible = false;
+            panelInfoTerem.Visible = false;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -76,6 +71,7 @@ namespace Project
             label6.Text = "Informatika terem";
             btnNext.Visible = false;
             lblNotes.Visible = true;
+            lblFolyosó.Visible = true;
         }
 
         private void lblNotes_Click(object sender, EventArgs e)
@@ -88,6 +84,9 @@ namespace Project
             panel2.BringToFront();
             btnNoteForward.Visible = true;
             btnNoteExit.Visible = true;
+            lblFolyosó.Visible = false;
+            btnFiok.Visible = true;
+            btnFiok.BringToFront();
         }
 
         private void btnNoteForward_Click(object sender, EventArgs e)
@@ -115,6 +114,68 @@ namespace Project
             btnNoteForward.Visible = false;
             btnNoteExit.Visible = false;
             label6.Text = "Informatika Terem";
+            lblFolyosó.Visible = true;
+            btnFiok.Visible = false;
+        }
+
+        private void lblFolyosó_Click(object sender, EventArgs e)
+        {
+            panelInfoTerem.Visible = false;
+        }
+
+        private void btnFiok_Click(object sender, EventArgs e)
+        {
+            btnFiok.Visible = false;
+            lblCode.Visible = true;
+            lblCode.BringToFront();
+            txtCode.Visible = true;
+            txtCode.BringToFront();
+            btnOpen.Visible = true;
+            btnOpen.BringToFront();
+            btnNext.Visible = false;
+            btnClose.Visible = false;
+            btnBack.Visible = false;
+            btnExitCode.Visible = true;
+            btnExitCode.BringToFront();
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            if (txtCode.Text=="")
+            {
+                MessageBox.Show("Ne hagyd üresen a kód mezőt!");
+            }
+
+            int year = DateTime.Today.Year;
+            int month = DateTime.Today.Month;
+            int day = DateTime.Today.Day;
+
+            string code=Convert.ToString(year)+Convert.ToString(month)+Convert.ToString(day)+Convert.ToString(206);
+
+            if (txtCode.Text==code)
+            {
+                MessageBox.Show("Sikeresen kinyitottad a fiókot");
+            }
+            else
+            {
+                MessageBox.Show("Helytelen kód!");
+            }
+        }
+
+        private void btnExitCode_Click(object sender, EventArgs e)
+        {
+            btnFiok.Visible = true;
+            lblCode.Visible = false;
+            lblCode.SendToBack();
+            txtCode.Visible = false;
+            txtCode.SendToBack();
+            btnOpen.Visible = false;
+            btnOpen.SendToBack();
+            btnNext.Visible = true;
+            btnClose.Visible = true;
+            btnBack.Visible = true;
+            btnExitCode.Visible = false;
+            btnExitCode.SendToBack();
         }
     }
 }
