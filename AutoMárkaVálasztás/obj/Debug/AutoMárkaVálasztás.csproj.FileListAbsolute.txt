@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\AutoMárkaVálasztás\bin\Debug\AutoMárkaVálasztás.exe.config
+C:\Users\balazs.david.420\source\repos\AutoMárkaVálasztás\bin\Debug\AutoMárkaVálasztás.exe
+C:\Users\balazs.david.420\source\repos\AutoMárkaVálasztás\bin\Debug\AutoMárkaVálasztás.pdb
+C:\Users\balazs.david.420\source\repos\AutoMárkaVálasztás\obj\Debug\AutoMárkaVálasztás.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\AutoMárkaVálasztás\obj\Debug\AutoMárkaVálasztás.Form1.resources
+C:\Users\balazs.david.420\source\repos\AutoMárkaVálasztás\obj\Debug\AutoMárkaVálasztás.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\AutoMárkaVálasztás\obj\Debug\AutoMárkaVálasztás.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\AutoMárkaVálasztás\obj\Debug\AutoMárkaVálasztás.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\AutoMárkaVálasztás\obj\Debug\AutoMárkaVálasztás.exe
+C:\Users\balazs.david.420\source\repos\AutoMárkaVálasztás\obj\Debug\AutoMárkaVálasztás.pdb

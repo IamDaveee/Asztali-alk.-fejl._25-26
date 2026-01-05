@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\Visual Ismétlés 01.05\bin\Debug\Visual Ismétlés 01.05.exe.config
+C:\Users\balazs.david.420\source\repos\Visual Ismétlés 01.05\bin\Debug\Visual Ismétlés 01.05.exe
+C:\Users\balazs.david.420\source\repos\Visual Ismétlés 01.05\bin\Debug\Visual Ismétlés 01.05.pdb
+C:\Users\balazs.david.420\source\repos\Visual Ismétlés 01.05\obj\Debug\Visual Ismétlés 01.05.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\Visual Ismétlés 01.05\obj\Debug\Visual_Ismétlés_01._05.Form1.resources
+C:\Users\balazs.david.420\source\repos\Visual Ismétlés 01.05\obj\Debug\Visual_Ismétlés_01._05.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\Visual Ismétlés 01.05\obj\Debug\Visual Ismétlés 01.05.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\Visual Ismétlés 01.05\obj\Debug\Visual Ismétlés 01.05.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\Visual Ismétlés 01.05\obj\Debug\Visual Ismétlés 01.05.exe
+C:\Users\balazs.david.420\source\repos\Visual Ismétlés 01.05\obj\Debug\Visual Ismétlés 01.05.pdb
