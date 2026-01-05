@@ -1,0 +1,38 @@
+1.)
+Hozzon létre egy Diak nevű osztályt, amely a következő publikus mezőket/adattagokat tartalmazza:
+
+- nev (szöveg) – a diák neve
+- jegyek (lista egész számokból) – a diák jegyei
+
+
+2.)
+Készítsen az osztályhoz egy konstruktort, amely paraméterként megkapja a diák nevét, és inicializálja a jegyek listáját üresen!
+
+
+3.)
+Készítsen egy HozzaadJegy(int jegy) nevű metódust, amely hozzáad egy jegyet a jegyek listához!
+
+4.)
+Készítsen egy Atlag() nevű metódust, amely kiszámítja és visszaadja a jegyek átlagát valós számként! Ha nincs jegy, az átlag legyen 0.
+
+5.)
+Készítsen egy Kiir() nevű metódust, amely visszaadja a diák nevét és átlagát az alábbi formában:
+
+Diák neve: Kovács Anna
+Jegyek átlaga: 4,33
+
+6.)
+Vegyen fel két Diak típusú objektumot az alábbi nevekkel:
+
+1. diák: Kiss Péter
+2. diák: Kovács Anna
+
+
+7.)
+Adjon hozzá jegyeket mindkét diákhoz:
+
+Kiss Péter: 5, 4, 3
+Kovács Anna: 4, 5, 5, 3
+
+8.)
+Írja ki mindkét diák adatait a Kiir() metódus segítségével!

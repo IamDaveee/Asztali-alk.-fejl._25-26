@@ -1,0 +1,40 @@
+1.)
+Hozzon létre egy Feladvany osztályt, amely a következő publikus mezőket tartalmazza:
+- leiras (szöveg) - a feladvány leírása
+- megoldas (szöveg) - a feladvány megoldása
+- nehezseg (egész szám) - a feladvány nehézsége (1-10)
+
+
+2.)
+Készítsen az osztályhoz egy konstruktort, amely paramétereken keresztül állítja be az adatmezők kezdőértékét!
+
+3.)
+Készítsen egy Kiir() szöveges visszatérési értékkel rendelkező metódust, amely megjeleníti egy feladvány adatait az alábbi formában:
+"Melyik hónapban van 28 nap? Megoldás: mindegyik Nehézségi szint: 3/10"
+
+4.)
+Készítsen egy Ellenoriz() logikai visszatérési értékkel rendelkező metódust, amely azt vizsgálja meg, hogy a paraméterként megadott válasz megegyezik-e a feladvány helyes megoldásával (megoldas adatmező). 
+
+5.)
+Készítsen egy Pontozas() egész típusú visszatérési értékkel rendelkező metódust, amely visszaadja helyes válasz esetén az elért pontszámot! A pontszám számítása: Nehézségi szint * 10
+
+6.)
+Vegyen fel két osztály típusú objektumot az alábbi értékekkel!
+
+1. feladvány:
+leírás: Mi az, ami minél többet veszel el belőle, annál nagyobb lesz?
+megoldás: lyuk
+nehézségi szint: 6
+
+2. feladvány: 
+leírás: Egy buszsofőr lefelé megy egy hegyen, a fék nem működik, mégsem történik baleset. Miért?
+megoldás: gyalog megy
+nehézségi szint: 7
+
+
+7.)
+Írja ki mindkét objektum adatait a Kiir() metódus segítségével!
+
+
+8.)
+Kérje be a felhasználó tippjét, és az Ellenoriz() metódus felhasználásával írja képernyőre, hogy helyes volt-e a felhasználó tippje, és hogy mennyi pontot ért el!

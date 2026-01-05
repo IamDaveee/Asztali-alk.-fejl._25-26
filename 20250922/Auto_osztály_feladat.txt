@@ -1,0 +1,56 @@
+1.)
+Hozzon létre egy Auto nevű osztályt, amely a következő publikus mezőket tartalmazza:
+
+- rendszam (szöveg) – az autó rendszáma
+- uzemanyag (valós szám) – az autóban lévő üzemanyag mennyisége literben
+- fogyasztas (valós szám) – az autó fogyasztása liter/100 km értékben
+
+
+2.)
+Készítsen az osztályhoz egy konstruktort, amely paramétereken keresztül beállítja az adatmezők kezdőértékeit!
+
+3.)
+Készítsen egy Megy(double tavolsag) nevű metódust, amely kiszámítja, hogy az autó mennyi üzemanyagot használ el a megadott távolság megtételéhez, és csökkenti az üzemanyag mennyiségét ennek megfelelően!
+
+képlet: elhasznált üzemanyag = (fogyasztás / 100) × távolság
+
+4.)
+Készítsen egy Tankol(double liter) nevű metódust, amely növeli az autó üzemanyag mennyiségét a megadott liter értékkel!
+
+
+
+5.)
+Készítsen egy AdatokKiirasa() metódust, amely képernyőre írja az autók adatait az alábbi formában:
+Rendszám: ABC-123
+Üzemanyag: 42,5 liter
+Fogyasztás: 6.5 liter/100 km
+
+6.)
+Vegyen fel két Auto típusú objektumot az alábbi értékekkel:
+
+1. autó:
+Rendszám: ABC-123
+Üzemanyag: 50,0 liter
+Fogyasztás: 6,5 liter/100 km
+
+2. autó:
+
+Rendszám: XYZ-789
+Üzemanyag: 30,0 liter
+Fogyasztás: 8,0 liter/100 km
+
+7.)
+Tankoljon mindkét autóba:
+
+Az első autóba: 10 liter
+A második autóba: 20 liter
+
+
+8.)
+Indítsa el mindkét autót egy adott távolságra:
+
+Az első autó: 120 km
+A második autó: 200 km
+
+9.)
+Írja ki mindkét autó állapotát az AdatokKiirasa() metódus segítségével!

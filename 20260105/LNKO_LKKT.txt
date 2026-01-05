@@ -1,0 +1,45 @@
+LNKO - Euklideszi algoritmus
+
+Függvény LNKO(a,b: egész):egész
+  ciklus amíg a<>b
+     ha a<b
+        b:=b-a
+     különben
+        a:=a-b
+   ciklus vége
+   LNKO:a
+Függvény vége.
+
+
+
+LNKO - rekurzív megoldás
+
+Függvény LNKO_rekurziv(a,b:egész):egész
+    Ha a=0 
+       LNKO_rekurziv:=b
+    Ha b=0
+       LNKO_rekurziv:=a
+    Ha a>b
+       LNKO_rekurziv:=LNKO_rekurziv(a MOD b,b)
+    Különben
+       LNKO_rekurziv:=LNKO_rekurziv(a, b MOD a)
+Függvény vége.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _12G_20250908
+{
+    //1.Ember osztály
+    class Ember
+    {
+        //adattagok - hozzáférési szint+adattípus+adattag neve
+        public string nev;
+        public int kor;
+        public string szhely, varos;
+
+        //konstruktor
+        public Ember(string nev, int kora, string szh, string varos)
+        {
+            this.nev = nev;
+            kor = kora;
+            szhely = szh;
+            this.varos = varos;
+        }
+        public Ember()
+        { }
+
+        public Ember(string nev)
+        {
+            this.nev = nev;
+            kor = 18;
+            varos = "Székesfehérvár";
+            szhely = "Budapest";
+        }
+
+        public void Kiir()
+        {
+            Console.WriteLine($"Név: {nev}\n\tKora: {kor}\n\tSzületési hely: {szhely}\n\tLakhely: {varos}");
+        }
+
+        public string Kiiras()
+        {
+            return $"{nev} {kor} éves, {szhely}-en született, {varos}-ban lakik";
+        }
+    }//osztály vége
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //2. Ember osztály egy példánya
+            Ember e1 = new Ember(); //alapért. konstruktor
+            //adattagok elérése változó neve.adattag
+            e1.nev = "Karcsi";
+            e1.kor = 5;
+            e1.szhely = "Bp.";
+            e1.varos = "Szfvár";
+            Console.WriteLine($"e1 példány adatai: {e1.nev} {e1.kor} {e1.szhely} {e1.varos}");
+
+            Ember e2 = new Ember();
+            e2.nev = "Kati";
+            e2.kor = 7;
+            e2.varos = "Bp.";
+            e2.szhely = "Szfvár";
+            Console.WriteLine($"e2 példány adatai: {e2.nev} {e2.kor} {e2.varos} {e2.szhely}");
+
+            Ember e3 = new Ember("Feri", 10, "Mo.", "Vác");
+            Console.WriteLine($"e3 példány adatai: {e3.nev} {e3.kor} {e3.varos} {e2.szhely}");
+
+            Console.WriteLine("4. név:");
+            string ember = Console.ReadLine();
+            Ember e4 = new Ember(ember);
+            Console.WriteLine($"e4 példány adatai: {e4.nev} {e4.kor} {e4.varos} {e4.szhely}");
+
+            //metódusok meghívása
+            e1.Kiir();
+            e2.Kiir();
+            e3.Kiir();
+            e4.Kiir();
+
+            Console.WriteLine($"Példányok:\n\t{e1.Kiiras()}\n\t{e2.Kiiras()}\n\t{e3.Kiiras()}\n\t{e4.Kiiras()}");
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,65 @@
+1.)
+Hozzon létre egy Recept nevű osztályt, amely a következő publikus mezőket tartalmazza:
+- nev (szöveg) - az étel neve
+- osszetevok (szöveg) - az összetevők vesszővel elválasztva
+- elkeszitesiIdo (szam) - az elkészítés ideje percben
+
+
+
+2.)
+Készítsen az osztályhoz egy konstruktort, amely paramétereken keresztül állítja be az adatmezők kezdőértékét!
+
+3.)
+Készítsen az osztályhoz egy paraméter nélküli konstruktort, amely az adatmezők értékét az alábbi értékekkel inicializálja:
+nev: ismeretlen
+osszetevok: ismeretlen
+elkeszitesiIdo: 0
+
+4.)
+Készítsen egy ReceptLeiras() metódust, amely megjeleníti egy étel adatait az alábbi formában:
+"Étel neve: rakott krumpli
+Összetevők: krumpli, tojás, tejföl, kolbász, só, bors
+Összetevők száma: 6 tétel
+Elkészítési idő: 45 perc"
+
+5.)
+Készítsen egy OsszetevoSzam() metódust, amely visszaadja, hogy hány összetevő szerepel a receptben!
+
+6.)
+Készítsen egy IdoKategoria() nevű metódust, amely az elkészítési idő alapján visszaadja az alábbi szöveges értéket:
+0-20 perc: "gyors"
+21-60 perc: "közepes"
+61 perc felett: "időigényes"
+
+7.)
+Készítsen egy TartalmazE() logikai visszatérési értékkel rendelkező metódust, amely visszaadja, hogy a paraméterként kapott összetevő szerepel-e a receptben!
+
+8.)
+Vegyen fel három osztály típusú objektumot az alábbi értékekkel! A 3. recept esetén az inicializálást a paraméter nélküli konstruktor segítségével oldja meg!
+
+1. recept:
+az étel neve: rakott krumpli
+az összetevők: krumpli, tojás, tejföl, kolbász, só, bors
+elkészítési idő: 45 perc
+
+
+2. recept:
+az étel neve: gyümölcssaláta
+az összetevők: alma, banán, kivi, narancs
+elkészítési idő: 15 perc
+
+3. recept:
+az étel neve: ismeretlen
+az összetevők: ismeretlen
+elkészítési idő: 0 perc
+
+
+9.)
+Kérje be a billentyűzetről egy új recept adatait és tárolja el egy 4. Recept típusú objektumba!
+
+10.)
+Írja ki mindegyik objektum adatait a ReceptLeiras() metódus segítségével!
+
+
+11.)
+Kérje be a felhasználótól egy összetevő nevét és vizsgálja meg minden receptnél a TartalmazE() metódus felhasználásával, hogy az összetevők listájában szerepel-e az adott összetevő! Az eredményt írja képernyőre!

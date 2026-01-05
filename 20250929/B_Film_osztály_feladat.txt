@@ -1,0 +1,68 @@
+1.)
+Hozzon létre egy Film nevű osztályt, amely az alábbi publikus mezőket tartalmazza:
+
+- cim (szöveg): a film címe
+- rendezo (szöveg): a film rendezője
+- hossz (egész): a film hossza percben
+- mufaj (szöveg): a film műfaja (pl. akció, vígjáték, dráma)
+
+2.)
+Készítsen az osztályhoz egy konstruktort, amely paramétereken keresztül állítja be az adatmezők kezdőértékét!
+
+3.)
+Készítsen az osztályhoz egy paraméter nélküli konstruktort, amely az adatmezők értékét az alábbi értékekkel inicializálja:
+cim: "ismeretlen"
+rendező: "ismeretlen"
+hossz: 0
+műfaj: "ismeretlen"
+
+4.)
+Készítsen az osztályhoz egy paraméteres konstruktort, amely a cim és rendezo adatmezők értékét állítja be paramétereken keresztül. Ebben az esetben a hossz mező értéke legyen perc, a műfaja pedig dráma.
+
+5.)
+Készítsen egy FilmLeiras() nevű, szöveges visszatérési értékkel rendelkező metódust, amely kiírja a film adatait az alábbi formátumban:
+Cím: A remény rabjai
+Rendező: Frank Darabont
+Hossz: 142 perc
+Műfaj: dráma
+
+6.)
+Készítsen egy szöveges visszatérési értékkel rendelkező HosszKategoria() nevű metódust, amely a film hosszúsága alapján visszaadja a kategóriát:
+
+0–60 perc: "rövidfilm"
+61–120 perc: "normál játékfilm"
+121 perc felett: "hosszú játékfilm"
+
+7.)
+Készítsen egy MufajPont() szöveges visszatérési értékkel rendelkező metódust, amely a műfaj alapján megjeleníti a film pontszámát:
+
+akció: 20 pont
+vígjáték: 15 pont
+dráma: 25 pont
+egyéb: 10 pont
+
+8.)
+Vegyen fel három Film osztály típusú objektumot az alábbi értékekkel! A 2. film esetén az inicializálást a paraméter nélküli konstruktor segítségével oldja meg!
+
+1. film:
+Cím: A remény rabjai
+Rendező: Frank Darabont
+Hossz: 142 perc
+Műfaj: dráma
+
+
+2. film: 
+Cím:ismeretlen
+Rendező: ismeretlen
+Hossz: 0 perc
+Műfaj: ismeretlen
+
+3. film:
+Cím: Valami Amerika
+Rendező: Herendi Gábor
+
+9.) 
+Írja ki a példányok adatait a megfelelő metódus meghívásával, valamint a filmek hossz-kategóriáját és műfajpontját.
+
+10.) 
+Készítsen egy Frissit() metódust, amely a billentyűzetről bekért adatokkal frissíti a 2. Film objektum adatait, majd írja képernyőre a frissített adatokat!

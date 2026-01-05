@@ -1,0 +1,22 @@
+1.)
+Készítsünk Kutya osztályt!
+Minden kutyának lesz neve, életkora, gazdája, éhségi szintje!
+A kutya éhségszint adattagja legyen privát, mert egy kutya éhségszintjét csak etetéssel és játékszinttel lehet befolyásolni.l
+
+Készítsen paraméteres konstruktort, amely beállítja az objektumok kezdeti értékét. Minden kutya gazdája az Alex lesz.
+
+Az osztályhoz tartozzon egy Etet metódus, amely befolyásolja a kutya éhségszintjét! A metódus paraméterként kapja meg az étel mennyiségét!
+
+Az osztályhoz tartozik egy Játék metódus, amely befolyásolja a kutya éhségszintjét! Ha az éhségjelző 50 érték alá csökken, akkor a kutya éhes, nem tudsz vele játszani.
+
+Az osztályhoz tartozzon egy Kiir metódus, amely kiírja a példányok adatait, és azt, hogy a kutya éhes-.e vagy sem.
+
+2.)
+Készítsünk egy Szamol osztályt, amely két számmal végez alapműveleteket! Írjunk metódust, amely értéket ad az adattagoknak. Az értékadás a program futása során a felhasználó által megadott értékekkel történjen.
+Az osztályhoz tartozzunk egy Muveletek metódus, amely paraméterként megkapja a két számot! A felhasználó által megadott műveleti jel által meghatározott feladatokat végezze el a metódus! (switch - case szerkezet)
+
+3.)
+
+Készítsünk egy Negyszog osztály! 
+Az osztályhoz tartozzon egy paraméteres konstruktor, amely az adattagokat inicializálja!
+Az osztály tartalmazzazzon egy logikai típusú paraméterezett NegyzeteE nevű metódust, amely megvizsglja, hogy a négyszög négyzet, vagy téglalap! A függvény felhasználásával készítsen egy kerület, terület kiszámítására alkalmas metódust, amely képernyőre írja az eredményt!

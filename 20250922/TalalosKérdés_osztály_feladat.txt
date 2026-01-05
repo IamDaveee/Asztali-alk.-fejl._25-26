@@ -1,0 +1,63 @@
+1.)
+Hozzon létre egy TalalosKerdes osztályt, amely a következő publikus mezőket tartalmazza:
+- kerdes (szöveg) - a találós kérdés szövege
+- valasz (szöveg) - a helyes válasz
+- kategoria (szöveg) - a kérdés témaköre (pl: logikai, szójáték, vicces stb.)
+
+
+2.)
+Készítsen az osztályhoz egy konstruktort, amely paramétereken keresztül állítja be az adatmezők kezdőértékét!
+
+3.)
+Készítsen az osztályhoz egy paraméter nélküli konstruktort, amely az adatmezők értékét az alábbi értékekkel inicializálja:
+kerdes: ismeretlen
+valasz: ismeretlen
+kategoria: ismeretlen
+
+4.)
+Készítsen egy Objektumok() metódust, amely megjeleníti egy találós kérdés adatait az alábbi formában:
+"Kérdés: Mi az, ami mindig jön, de sosem érkezik meg?
+Válasz: holnap
+Kategória: logikai"
+
+5.)
+Készítsen egy Ellenoriz() logikai visszatérési értékkel rendelkező metódust, amely azt vizsgálja meg, hogy a paraméterként megadott válasz megegyezik-e a találós kérdés helyes megoldásával (válasz adatmező). 
+
+6.)
+Készítsen egy HosszPont() egész típusú visszatérési értékkel rendelkező metódust, amely visszaadja helyes válasz hosszának megfelelő pontszámot. A megoldás hossza karakterenként 1 pontot ér.
+
+7.)
+Készítsen egy KategoriaPont() nevű egész típusú visszatérési értékkel rendelkező metódust, amely kategóriánk különböző pontszámot ad az alábbiak szerint:
+logikai kategória esetén: 20 pont
+szójáték esetén: 15 pont
+vicces kategória esetén: 10 pont
+Egyéb kategóriák esetén 5 pontot!
+
+8.)
+Vegyen fel három osztály típusú objektumot az alábbi értékekkel! A 3. találós kérdés esetén az inicializálást a paraméter nélküli konstruktor segítségével oldja meg!
+
+1. találós kérdés:
+Kérdés: Mi az, ami mindig jön, de sosem érkezik meg?
+Válasz: holnap
+Kategória: logikai
+
+
+2. találós kérdés: 
+Kérdés: Egy buszsofőr lefelé megy egy hegyen, a fék nem működik, mégsem történik baleset. Miért?
+Válasz: gyalog megy
+Kategória: vicces
+
+3. találós kérdés
+Kérdés: ismeretlen
+Válasz: ismeretlen
+Kategória: ismeretlen
+
+9.)
+Kérje be a billentyűzetről egy objektum adatait és tárolja el egy 4. TalalosKerdes típusú objektumba!
+
+10.)
+Írja ki mindegyik objektum adatait a Objektumok() metódus segítségével!
+
+
+11.)
+Kérje be a felhasználó tippjét, és írja képernyőre, hogy helyes volt-e a felhasználó válasza, és hogy mennyi pontot ért el! A pontozás során vegye figyelembe a kategóriánként járó pontokat is!

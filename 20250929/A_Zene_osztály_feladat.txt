@@ -1,0 +1,68 @@
+1.)
+Hozzon létre egy Zene nevű osztályt, amely az alábbi publikus mezőket tartalmazza:
+
+- cim (szöveg): a zeneszám címe
+- eloado (szöveg): az előadó neve
+- hossz (egész): a zeneszám hossza másodpercben
+- stilus (szöveg): a zeneszám stílusa pl. pop, rock, klasszikus
+
+2.)
+Készítsen az osztályhoz egy konstruktort, amely paramétereken keresztül állítja be az adatmezők kezdőértékét!
+
+3.)
+Készítsen az osztályhoz egy paraméter nélküli konstruktort, amely az adatmezők értékét az alábbi értékekkel inicializálja:
+cim: "ismeretlen"
+eloado: "ismeretlen"
+hossz: 0
+stilus: "ismeretlen"
+
+4.)
+Készítsen az osztályhoz egy paraméteres konstruktort, amely a cim és eloado paramétereken keresztül állítja be a megfelelő adattagokat! Ebben az esetben a hossz mező értéke legyen 30 másodperc, a stilus pedig klasszikus!
+
+5.)
+Készítsen egy ZeneLeiras() nevű szöveges visszatérési értékkel rendelkező metódust, amely kiírja a film adatait az alábbi formátumban:
+Cím: Imagine  
+Előadó: John Lennon  
+Hossz: 183 másodperc  
+Stílus: klasszikus
+
+6.)
+Készítsen egy szöveges típusú visszatérési értékkel rendelkező HosszKategoria() nevű metódust, amely a film hosszúsága alapján visszaadja a kategóriát:
+
+0–120 másodperc: "rövid szám"
+121–240 másodperc: "közepes hosszúságú szám"
+241 másodperc felett: "hosszú szám"
+
+7.)
+Készítsen egy StilusPont() egész értékkel visszatérő metódust, amely a műfaj alapján pontszámot ad:
+
+pop: 10 pont
+rock: 15 pont
+klasszikus: 20 pont
+egyéb: 5 pont
+
+8.)
+Vegyen fel három Zene osztály típusú objektumot az alábbi értékekkel! A 2. film esetén az inicializálást a paraméter nélküli konstruktor segítségével oldja meg!
+
+1. zeneszám:
+Cím: Imagine  
+Előadó: John Lennon  
+Hossz: 183 másodperc  
+Stílus: klasszikus
+
+2. zeneszám: 
+Cím: ismeretlen
+Előadó: ismeretlen
+Hossz: 0
+Stílus: ismeretlen
+
+3. zeneszám:
+Cím: Reptér
+Előadó: Korda György
+
+
+9.) 
+Írja ki a példányok adatait a megfelelő metódus meghívásával, valamint a zeneszámok hossz kategóriáját és stíluspontját.
+
+10.) 
+Készítsen egy FelulIr() metódust, amely a billentyűzetről bekért adatokkal frissíti a 2. zeneszám  adatait, majd írja képernyőre a frissített adatokat!
