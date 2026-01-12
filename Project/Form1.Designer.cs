@@ -41,6 +41,12 @@ namespace Project
             this.szabalyLeiras = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.panelInfoTerem = new System.Windows.Forms.Panel();
+            this.btnExitCode = new System.Windows.Forms.Button();
+            this.btnOpen = new System.Windows.Forms.Button();
+            this.txtCode = new System.Windows.Forms.TextBox();
+            this.lblCode = new System.Windows.Forms.Label();
+            this.btnFiok = new System.Windows.Forms.Button();
+            this.lblFolyosó = new System.Windows.Forms.Label();
             this.btnNoteExit = new System.Windows.Forms.Button();
             this.btnNoteBack = new System.Windows.Forms.Button();
             this.btnNoteForward = new System.Windows.Forms.Button();
@@ -52,15 +58,17 @@ namespace Project
             this.btnNext = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.lblFolyosó = new System.Windows.Forms.Label();
-            this.btnFiok = new System.Windows.Forms.Button();
-            this.lblCode = new System.Windows.Forms.Label();
-            this.txtCode = new System.Windows.Forms.TextBox();
-            this.btnOpen = new System.Windows.Forms.Button();
-            this.btnExitCode = new System.Windows.Forms.Button();
+            this.pnlUsb = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.rbOpt1 = new System.Windows.Forms.RadioButton();
+            this.rbopt2 = new System.Windows.Forms.RadioButton();
+            this.rbOpt3 = new System.Windows.Forms.RadioButton();
+            this.rbOpt4 = new System.Windows.Forms.RadioButton();
+            this.btnSelect = new System.Windows.Forms.Button();
             this.panelInfoTerem.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlUsb.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -177,6 +185,7 @@ namespace Project
             // 
             this.panelInfoTerem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelInfoTerem.BackgroundImage")));
             this.panelInfoTerem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelInfoTerem.Controls.Add(this.pnlUsb);
             this.panelInfoTerem.Controls.Add(this.btnExitCode);
             this.panelInfoTerem.Controls.Add(this.btnOpen);
             this.panelInfoTerem.Controls.Add(this.txtCode);
@@ -197,6 +206,68 @@ namespace Project
             this.panelInfoTerem.Name = "panelInfoTerem";
             this.panelInfoTerem.Size = new System.Drawing.Size(800, 460);
             this.panelInfoTerem.TabIndex = 10;
+            // 
+            // btnExitCode
+            // 
+            this.btnExitCode.Location = new System.Drawing.Point(161, 414);
+            this.btnExitCode.Name = "btnExitCode";
+            this.btnExitCode.Size = new System.Drawing.Size(75, 23);
+            this.btnExitCode.TabIndex = 15;
+            this.btnExitCode.Text = "Vissza";
+            this.btnExitCode.UseVisualStyleBackColor = true;
+            this.btnExitCode.Visible = false;
+            this.btnExitCode.Click += new System.EventHandler(this.btnExitCode_Click);
+            // 
+            // btnOpen
+            // 
+            this.btnOpen.Location = new System.Drawing.Point(544, 414);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(75, 23);
+            this.btnOpen.TabIndex = 14;
+            this.btnOpen.Text = "Nyitás";
+            this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Visible = false;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // txtCode
+            // 
+            this.txtCode.Location = new System.Drawing.Point(335, 417);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(100, 20);
+            this.txtCode.TabIndex = 13;
+            this.txtCode.Visible = false;
+            // 
+            // lblCode
+            // 
+            this.lblCode.AutoSize = true;
+            this.lblCode.Location = new System.Drawing.Point(370, 392);
+            this.lblCode.Name = "lblCode";
+            this.lblCode.Size = new System.Drawing.Size(29, 13);
+            this.lblCode.TabIndex = 2;
+            this.lblCode.Text = "Kód:";
+            this.lblCode.Visible = false;
+            // 
+            // btnFiok
+            // 
+            this.btnFiok.Location = new System.Drawing.Point(348, 415);
+            this.btnFiok.Name = "btnFiok";
+            this.btnFiok.Size = new System.Drawing.Size(75, 23);
+            this.btnFiok.TabIndex = 12;
+            this.btnFiok.Text = "Fiók";
+            this.btnFiok.UseVisualStyleBackColor = true;
+            this.btnFiok.Visible = false;
+            this.btnFiok.Click += new System.EventHandler(this.btnFiok_Click);
+            // 
+            // lblFolyosó
+            // 
+            this.lblFolyosó.AutoSize = true;
+            this.lblFolyosó.Location = new System.Drawing.Point(482, 149);
+            this.lblFolyosó.Name = "lblFolyosó";
+            this.lblFolyosó.Size = new System.Drawing.Size(43, 13);
+            this.lblFolyosó.TabIndex = 11;
+            this.lblFolyosó.Text = "Folyosó";
+            this.lblFolyosó.Visible = false;
+            this.lblFolyosó.Click += new System.EventHandler(this.lblFolyosó_Click);
             // 
             // btnNoteExit
             // 
@@ -317,71 +388,86 @@ namespace Project
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.Location = new System.Drawing.Point(269, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(216, 32);
+            this.label6.Size = new System.Drawing.Size(217, 32);
             this.label6.TabIndex = 2;
             this.label6.Text = "Kiinduló helyzet";
             // 
-            // lblFolyosó
+            // pnlUsb
             // 
-            this.lblFolyosó.AutoSize = true;
-            this.lblFolyosó.Location = new System.Drawing.Point(482, 149);
-            this.lblFolyosó.Name = "lblFolyosó";
-            this.lblFolyosó.Size = new System.Drawing.Size(43, 13);
-            this.lblFolyosó.TabIndex = 11;
-            this.lblFolyosó.Text = "Folyosó";
-            this.lblFolyosó.Visible = false;
-            this.lblFolyosó.Click += new System.EventHandler(this.lblFolyosó_Click);
+            this.pnlUsb.Controls.Add(this.btnSelect);
+            this.pnlUsb.Controls.Add(this.rbOpt4);
+            this.pnlUsb.Controls.Add(this.rbOpt3);
+            this.pnlUsb.Controls.Add(this.rbopt2);
+            this.pnlUsb.Controls.Add(this.rbOpt1);
+            this.pnlUsb.Controls.Add(this.textBox2);
+            this.pnlUsb.Location = new System.Drawing.Point(322, 109);
+            this.pnlUsb.Name = "pnlUsb";
+            this.pnlUsb.Size = new System.Drawing.Size(127, 273);
+            this.pnlUsb.TabIndex = 2;
             // 
-            // btnFiok
+            // textBox2
             // 
-            this.btnFiok.Location = new System.Drawing.Point(348, 415);
-            this.btnFiok.Name = "btnFiok";
-            this.btnFiok.Size = new System.Drawing.Size(75, 23);
-            this.btnFiok.TabIndex = 12;
-            this.btnFiok.Text = "Fiók";
-            this.btnFiok.UseVisualStyleBackColor = true;
-            this.btnFiok.Visible = false;
-            this.btnFiok.Click += new System.EventHandler(this.btnFiok_Click);
+            this.textBox2.Location = new System.Drawing.Point(0, 0);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(127, 128);
+            this.textBox2.TabIndex = 0;
+            this.textBox2.Text = "Találtál néhány PenDriveot, és egy cetlit mellette, amelyre rá van írva: \"Az igaz" +
+    "i kulcsot soha nem nevezem annak, aminek látszik.\". Választ ki azt a pendriveot " +
+    "amelyet be szeretnél dugni a gépbe:";
             // 
-            // lblCode
+            // rbOpt1
             // 
-            this.lblCode.AutoSize = true;
-            this.lblCode.Location = new System.Drawing.Point(370, 392);
-            this.lblCode.Name = "lblCode";
-            this.lblCode.Size = new System.Drawing.Size(29, 13);
-            this.lblCode.TabIndex = 2;
-            this.lblCode.Text = "Kód:";
-            this.lblCode.Visible = false;
+            this.rbOpt1.AutoSize = true;
+            this.rbOpt1.Location = new System.Drawing.Point(13, 135);
+            this.rbOpt1.Name = "rbOpt1";
+            this.rbOpt1.Size = new System.Drawing.Size(98, 17);
+            this.rbOpt1.TabIndex = 1;
+            this.rbOpt1.TabStop = true;
+            this.rbOpt1.Text = "film_matek.mp4";
+            this.rbOpt1.UseVisualStyleBackColor = true;
             // 
-            // txtCode
+            // rbopt2
             // 
-            this.txtCode.Location = new System.Drawing.Point(335, 417);
-            this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(100, 20);
-            this.txtCode.TabIndex = 13;
-            this.txtCode.Visible = false;
+            this.rbopt2.AutoSize = true;
+            this.rbopt2.Location = new System.Drawing.Point(13, 158);
+            this.rbopt2.Name = "rbopt2";
+            this.rbopt2.Size = new System.Drawing.Size(67, 17);
+            this.rbopt2.TabIndex = 2;
+            this.rbopt2.TabStop = true;
+            this.rbopt2.Text = "virus.exe";
+            this.rbopt2.UseVisualStyleBackColor = true;
             // 
-            // btnOpen
+            // rbOpt3
             // 
-            this.btnOpen.Location = new System.Drawing.Point(544, 414);
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(75, 23);
-            this.btnOpen.TabIndex = 14;
-            this.btnOpen.Text = "Nyitás";
-            this.btnOpen.UseVisualStyleBackColor = true;
-            this.btnOpen.Visible = false;
-            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
+            this.rbOpt3.AutoSize = true;
+            this.rbOpt3.Location = new System.Drawing.Point(13, 181);
+            this.rbOpt3.Name = "rbOpt3";
+            this.rbOpt3.Size = new System.Drawing.Size(100, 17);
+            this.rbOpt3.TabIndex = 3;
+            this.rbOpt3.TabStop = true;
+            this.rbOpt3.Text = "jegyzo_kulcs.inf";
+            this.rbOpt3.UseVisualStyleBackColor = true;
             // 
-            // btnExitCode
+            // rbOpt4
             // 
-            this.btnExitCode.Location = new System.Drawing.Point(161, 414);
-            this.btnExitCode.Name = "btnExitCode";
-            this.btnExitCode.Size = new System.Drawing.Size(75, 23);
-            this.btnExitCode.TabIndex = 15;
-            this.btnExitCode.Text = "Vissza";
-            this.btnExitCode.UseVisualStyleBackColor = true;
-            this.btnExitCode.Visible = false;
-            this.btnExitCode.Click += new System.EventHandler(this.btnExitCode_Click);
+            this.rbOpt4.AutoSize = true;
+            this.rbOpt4.Location = new System.Drawing.Point(13, 204);
+            this.rbOpt4.Name = "rbOpt4";
+            this.rbOpt4.Size = new System.Drawing.Size(100, 17);
+            this.rbOpt4.TabIndex = 4;
+            this.rbOpt4.TabStop = true;
+            this.rbOpt4.Text = "jatek_setup.exe";
+            this.rbOpt4.UseVisualStyleBackColor = true;
+            // 
+            // btnSelect
+            // 
+            this.btnSelect.Location = new System.Drawing.Point(26, 236);
+            this.btnSelect.Name = "btnSelect";
+            this.btnSelect.Size = new System.Drawing.Size(75, 23);
+            this.btnSelect.TabIndex = 5;
+            this.btnSelect.Text = "Kiválaszt";
+            this.btnSelect.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -408,6 +494,8 @@ namespace Project
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlUsb.ResumeLayout(false);
+            this.pnlUsb.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -443,6 +531,13 @@ namespace Project
         private System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.Label lblCode;
         private System.Windows.Forms.Button btnExitCode;
+        private System.Windows.Forms.Panel pnlUsb;
+        private System.Windows.Forms.Button btnSelect;
+        private System.Windows.Forms.RadioButton rbOpt4;
+        private System.Windows.Forms.RadioButton rbOpt3;
+        private System.Windows.Forms.RadioButton rbopt2;
+        private System.Windows.Forms.RadioButton rbOpt1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

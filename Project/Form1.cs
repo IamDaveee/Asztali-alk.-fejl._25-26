@@ -154,7 +154,9 @@ namespace Project
 
             if (txtCode.Text==code)
             {
-                MessageBox.Show("Sikeresen kinyitottad a fiókot");
+                MessageBox.Show("Sikeresen kinyitottad a fiókot","Siker", MessageBoxButtons.OK);
+                CloseAll();
+                OpenDialogBox();
             }
             else
             {
@@ -162,6 +164,32 @@ namespace Project
             }
         }
 
+        public void OpenDialogBox()
+        {
+
+        }
+        private void CloseAll()
+        {
+            label6.Text = "Informatika Terem";
+            pictureBox1.Visible = false;
+            panel2.Visible = false;
+
+            btnFiok.Visible = false;
+            lblCode.Visible = false;
+            lblCode.SendToBack();
+            txtCode.Visible = false;
+            txtCode.SendToBack();
+            btnOpen.Visible = false;
+            btnOpen.SendToBack();
+            btnNext.Visible = false;
+            btnNoteForward.Visible = false;
+            btnNoteBack.Visible = false;
+            btnNoteExit.Visible = false;
+            btnClose.Visible = false;
+            btnBack.Visible = false;
+            btnExitCode.Visible = false;
+            btnExitCode.SendToBack();
+        }
         private void btnExitCode_Click(object sender, EventArgs e)
         {
             btnFiok.Visible = true;
