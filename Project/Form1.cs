@@ -114,7 +114,6 @@ namespace Project
             btnNoteForward.Visible = false;
             btnNoteExit.Visible = false;
             label6.Text = "Informatika Terem";
-            lblFolyosó.Visible = true;
             btnFiok.Visible = false;
         }
 
@@ -139,6 +138,37 @@ namespace Project
             btnExitCode.BringToFront();
         }
 
+        private void CloseAll()
+        {
+            label6.Text = "Informatika Terem";
+            pictureBox1.Visible = false;
+            panel2.Visible = true;
+
+            txtNote1.Visible = false;
+            txtNote2.Visible = false;
+            btnFiok.Visible = false;
+            lblCode.Visible = false;
+            lblCode.SendToBack();
+            txtCode.Visible = false;
+            txtCode.SendToBack();
+            btnOpen.Visible = false;
+            btnOpen.SendToBack();
+            btnNext.Visible = false;
+            btnNoteForward.Visible = false;
+            btnNoteBack.Visible = false;
+            btnNoteExit.Visible = false;
+            btnClose.Visible = false;
+            btnBack.Visible = false;
+            btnExitCode.Visible = false;
+            btnExitCode.SendToBack();
+        }
+
+        private void OpenDialogBox()
+        {
+            pnlUsb.Visible = true;
+            textBox2.Visible = true;
+            btnSelect.Visible = true;
+        }
         private void btnOpen_Click(object sender, EventArgs e)
         {
             if (txtCode.Text=="")
@@ -163,33 +193,7 @@ namespace Project
                 MessageBox.Show("Helytelen kód!");
             }
         }
-
-        public void OpenDialogBox()
-        {
-
-        }
-        private void CloseAll()
-        {
-            label6.Text = "Informatika Terem";
-            pictureBox1.Visible = false;
-            panel2.Visible = false;
-
-            btnFiok.Visible = false;
-            lblCode.Visible = false;
-            lblCode.SendToBack();
-            txtCode.Visible = false;
-            txtCode.SendToBack();
-            btnOpen.Visible = false;
-            btnOpen.SendToBack();
-            btnNext.Visible = false;
-            btnNoteForward.Visible = false;
-            btnNoteBack.Visible = false;
-            btnNoteExit.Visible = false;
-            btnClose.Visible = false;
-            btnBack.Visible = false;
-            btnExitCode.Visible = false;
-            btnExitCode.SendToBack();
-        }
+        
         private void btnExitCode_Click(object sender, EventArgs e)
         {
             btnFiok.Visible = true;
@@ -204,6 +208,22 @@ namespace Project
             btnBack.Visible = true;
             btnExitCode.Visible = false;
             btnExitCode.SendToBack();
+        }
+
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+            if (rbopt2.Checked==true)
+            {
+                MessageBox.Show("Kiválasztottad a jó PenDriveot, megkaptad a terem kulcsát", "Siker", MessageBoxButtons.OK);
+                pnlUsb.Visible = false;
+                textBox2.Visible = false;
+                btnSelect.Visible = false;
+                lblFolyosó.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Helytelen választás");
+            }
         }
     }
 }

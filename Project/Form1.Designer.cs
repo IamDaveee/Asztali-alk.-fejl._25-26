@@ -51,6 +51,13 @@ namespace Project
             this.btnNoteBack = new System.Windows.Forms.Button();
             this.btnNoteForward = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlUsb = new System.Windows.Forms.Panel();
+            this.btnSelect = new System.Windows.Forms.Button();
+            this.rbOpt4 = new System.Windows.Forms.RadioButton();
+            this.rbOpt3 = new System.Windows.Forms.RadioButton();
+            this.rbopt2 = new System.Windows.Forms.RadioButton();
+            this.rbOpt1 = new System.Windows.Forms.RadioButton();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.txtNote2 = new System.Windows.Forms.TextBox();
             this.txtNote1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -58,17 +65,10 @@ namespace Project
             this.btnNext = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pnlUsb = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.rbOpt1 = new System.Windows.Forms.RadioButton();
-            this.rbopt2 = new System.Windows.Forms.RadioButton();
-            this.rbOpt3 = new System.Windows.Forms.RadioButton();
-            this.rbOpt4 = new System.Windows.Forms.RadioButton();
-            this.btnSelect = new System.Windows.Forms.Button();
             this.panelInfoTerem.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlUsb.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -185,7 +185,6 @@ namespace Project
             // 
             this.panelInfoTerem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelInfoTerem.BackgroundImage")));
             this.panelInfoTerem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelInfoTerem.Controls.Add(this.pnlUsb);
             this.panelInfoTerem.Controls.Add(this.btnExitCode);
             this.panelInfoTerem.Controls.Add(this.btnOpen);
             this.panelInfoTerem.Controls.Add(this.txtCode);
@@ -305,6 +304,7 @@ namespace Project
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.pnlUsb);
             this.panel2.Controls.Add(this.txtNote2);
             this.panel2.Controls.Add(this.txtNote1);
             this.panel2.Location = new System.Drawing.Point(322, 109);
@@ -312,6 +312,86 @@ namespace Project
             this.panel2.Size = new System.Drawing.Size(127, 273);
             this.panel2.TabIndex = 7;
             this.panel2.Visible = false;
+            // 
+            // pnlUsb
+            // 
+            this.pnlUsb.BackColor = System.Drawing.Color.White;
+            this.pnlUsb.Controls.Add(this.btnSelect);
+            this.pnlUsb.Controls.Add(this.rbOpt4);
+            this.pnlUsb.Controls.Add(this.rbOpt3);
+            this.pnlUsb.Controls.Add(this.rbopt2);
+            this.pnlUsb.Controls.Add(this.rbOpt1);
+            this.pnlUsb.Controls.Add(this.textBox2);
+            this.pnlUsb.Location = new System.Drawing.Point(0, 0);
+            this.pnlUsb.Name = "pnlUsb";
+            this.pnlUsb.Size = new System.Drawing.Size(127, 273);
+            this.pnlUsb.TabIndex = 2;
+            this.pnlUsb.Visible = false;
+            // 
+            // btnSelect
+            // 
+            this.btnSelect.Location = new System.Drawing.Point(26, 236);
+            this.btnSelect.Name = "btnSelect";
+            this.btnSelect.Size = new System.Drawing.Size(75, 23);
+            this.btnSelect.TabIndex = 5;
+            this.btnSelect.Text = "Kiválaszt";
+            this.btnSelect.UseVisualStyleBackColor = true;
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
+            // 
+            // rbOpt4
+            // 
+            this.rbOpt4.AutoSize = true;
+            this.rbOpt4.Location = new System.Drawing.Point(13, 204);
+            this.rbOpt4.Name = "rbOpt4";
+            this.rbOpt4.Size = new System.Drawing.Size(100, 17);
+            this.rbOpt4.TabIndex = 4;
+            this.rbOpt4.TabStop = true;
+            this.rbOpt4.Text = "jatek_setup.exe";
+            this.rbOpt4.UseVisualStyleBackColor = true;
+            // 
+            // rbOpt3
+            // 
+            this.rbOpt3.AutoSize = true;
+            this.rbOpt3.Location = new System.Drawing.Point(13, 181);
+            this.rbOpt3.Name = "rbOpt3";
+            this.rbOpt3.Size = new System.Drawing.Size(100, 17);
+            this.rbOpt3.TabIndex = 3;
+            this.rbOpt3.TabStop = true;
+            this.rbOpt3.Text = "jegyzo_kulcs.inf";
+            this.rbOpt3.UseVisualStyleBackColor = true;
+            // 
+            // rbopt2
+            // 
+            this.rbopt2.AutoSize = true;
+            this.rbopt2.Location = new System.Drawing.Point(13, 158);
+            this.rbopt2.Name = "rbopt2";
+            this.rbopt2.Size = new System.Drawing.Size(67, 17);
+            this.rbopt2.TabIndex = 2;
+            this.rbopt2.TabStop = true;
+            this.rbopt2.Text = "virus.exe";
+            this.rbopt2.UseVisualStyleBackColor = true;
+            // 
+            // rbOpt1
+            // 
+            this.rbOpt1.AutoSize = true;
+            this.rbOpt1.Location = new System.Drawing.Point(13, 135);
+            this.rbOpt1.Name = "rbOpt1";
+            this.rbOpt1.Size = new System.Drawing.Size(98, 17);
+            this.rbOpt1.TabIndex = 1;
+            this.rbOpt1.TabStop = true;
+            this.rbOpt1.Text = "film_matek.mp4";
+            this.rbOpt1.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(0, 0);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(127, 128);
+            this.textBox2.TabIndex = 0;
+            this.textBox2.Text = "Találtál néhány PenDriveot, és egy cetlit mellette, amelyre rá van írva: \"Az igaz" +
+    "i kulcsot soha nem nevezem annak, aminek látszik.\". Választ ki azt a pendriveot " +
+    "amelyet be szeretnél dugni a gépbe:";
             // 
             // txtNote2
             // 
@@ -392,83 +472,6 @@ namespace Project
             this.label6.TabIndex = 2;
             this.label6.Text = "Kiinduló helyzet";
             // 
-            // pnlUsb
-            // 
-            this.pnlUsb.Controls.Add(this.btnSelect);
-            this.pnlUsb.Controls.Add(this.rbOpt4);
-            this.pnlUsb.Controls.Add(this.rbOpt3);
-            this.pnlUsb.Controls.Add(this.rbopt2);
-            this.pnlUsb.Controls.Add(this.rbOpt1);
-            this.pnlUsb.Controls.Add(this.textBox2);
-            this.pnlUsb.Location = new System.Drawing.Point(322, 109);
-            this.pnlUsb.Name = "pnlUsb";
-            this.pnlUsb.Size = new System.Drawing.Size(127, 273);
-            this.pnlUsb.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(0, 0);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(127, 128);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.Text = "Találtál néhány PenDriveot, és egy cetlit mellette, amelyre rá van írva: \"Az igaz" +
-    "i kulcsot soha nem nevezem annak, aminek látszik.\". Választ ki azt a pendriveot " +
-    "amelyet be szeretnél dugni a gépbe:";
-            // 
-            // rbOpt1
-            // 
-            this.rbOpt1.AutoSize = true;
-            this.rbOpt1.Location = new System.Drawing.Point(13, 135);
-            this.rbOpt1.Name = "rbOpt1";
-            this.rbOpt1.Size = new System.Drawing.Size(98, 17);
-            this.rbOpt1.TabIndex = 1;
-            this.rbOpt1.TabStop = true;
-            this.rbOpt1.Text = "film_matek.mp4";
-            this.rbOpt1.UseVisualStyleBackColor = true;
-            // 
-            // rbopt2
-            // 
-            this.rbopt2.AutoSize = true;
-            this.rbopt2.Location = new System.Drawing.Point(13, 158);
-            this.rbopt2.Name = "rbopt2";
-            this.rbopt2.Size = new System.Drawing.Size(67, 17);
-            this.rbopt2.TabIndex = 2;
-            this.rbopt2.TabStop = true;
-            this.rbopt2.Text = "virus.exe";
-            this.rbopt2.UseVisualStyleBackColor = true;
-            // 
-            // rbOpt3
-            // 
-            this.rbOpt3.AutoSize = true;
-            this.rbOpt3.Location = new System.Drawing.Point(13, 181);
-            this.rbOpt3.Name = "rbOpt3";
-            this.rbOpt3.Size = new System.Drawing.Size(100, 17);
-            this.rbOpt3.TabIndex = 3;
-            this.rbOpt3.TabStop = true;
-            this.rbOpt3.Text = "jegyzo_kulcs.inf";
-            this.rbOpt3.UseVisualStyleBackColor = true;
-            // 
-            // rbOpt4
-            // 
-            this.rbOpt4.AutoSize = true;
-            this.rbOpt4.Location = new System.Drawing.Point(13, 204);
-            this.rbOpt4.Name = "rbOpt4";
-            this.rbOpt4.Size = new System.Drawing.Size(100, 17);
-            this.rbOpt4.TabIndex = 4;
-            this.rbOpt4.TabStop = true;
-            this.rbOpt4.Text = "jatek_setup.exe";
-            this.rbOpt4.UseVisualStyleBackColor = true;
-            // 
-            // btnSelect
-            // 
-            this.btnSelect.Location = new System.Drawing.Point(26, 236);
-            this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(75, 23);
-            this.btnSelect.TabIndex = 5;
-            this.btnSelect.Text = "Kiválaszt";
-            this.btnSelect.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -493,9 +496,9 @@ namespace Project
             this.panelInfoTerem.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlUsb.ResumeLayout(false);
             this.pnlUsb.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
