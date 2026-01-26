@@ -1,0 +1,10 @@
+C:\Users\janus.marta\source\repos\12G_20260120_ListBox\bin\Debug\12G_20260120_ListBox.exe.config
+C:\Users\janus.marta\source\repos\12G_20260120_ListBox\bin\Debug\12G_20260120_ListBox.exe
+C:\Users\janus.marta\source\repos\12G_20260120_ListBox\bin\Debug\12G_20260120_ListBox.pdb
+C:\Users\janus.marta\source\repos\12G_20260120_ListBox\obj\Debug\12G_20260120_ListBox.csproj.AssemblyReference.cache
+C:\Users\janus.marta\source\repos\12G_20260120_ListBox\obj\Debug\_12G_20260120_ListBox.Form1.resources
+C:\Users\janus.marta\source\repos\12G_20260120_ListBox\obj\Debug\_12G_20260120_ListBox.Properties.Resources.resources
+C:\Users\janus.marta\source\repos\12G_20260120_ListBox\obj\Debug\12G_20260120_ListBox.csproj.GenerateResource.cache
+C:\Users\janus.marta\source\repos\12G_20260120_ListBox\obj\Debug\12G_20260120_ListBox.csproj.CoreCompileInputs.cache
+C:\Users\janus.marta\source\repos\12G_20260120_ListBox\obj\Debug\12G_20260120_ListBox.exe
+C:\Users\janus.marta\source\repos\12G_20260120_ListBox\obj\Debug\12G_20260120_ListBox.pdb
