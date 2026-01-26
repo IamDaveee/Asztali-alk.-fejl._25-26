@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\ListBox_Gyak\bin\Debug\ListBox_Gyak.exe.config
+C:\Users\balazs.david.420\source\repos\ListBox_Gyak\bin\Debug\ListBox_Gyak.exe
+C:\Users\balazs.david.420\source\repos\ListBox_Gyak\bin\Debug\ListBox_Gyak.pdb
+C:\Users\balazs.david.420\source\repos\ListBox_Gyak\obj\Debug\ListBox_Gyak.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\ListBox_Gyak\obj\Debug\ListBox_Gyak.Form1.resources
+C:\Users\balazs.david.420\source\repos\ListBox_Gyak\obj\Debug\ListBox_Gyak.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\ListBox_Gyak\obj\Debug\ListBox_Gyak.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\ListBox_Gyak\obj\Debug\ListBox_Gyak.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\ListBox_Gyak\obj\Debug\ListBox_Gyak.exe
+C:\Users\balazs.david.420\source\repos\ListBox_Gyak\obj\Debug\ListBox_Gyak.pdb

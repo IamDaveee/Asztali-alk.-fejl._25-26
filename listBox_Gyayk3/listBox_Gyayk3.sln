@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35229.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "listBox_Gyayk3", "listBox_Gyayk3.csproj", "{A786E45E-84E8-4E40-BEF3-5419F3B1D3A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A786E45E-84E8-4E40-BEF3-5419F3B1D3A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A786E45E-84E8-4E40-BEF3-5419F3B1D3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A786E45E-84E8-4E40-BEF3-5419F3B1D3A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A786E45E-84E8-4E40-BEF3-5419F3B1D3A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F2E853E-3BA6-452F-9589-F94A38DB62DE}
+	EndGlobalSection
+EndGlobal

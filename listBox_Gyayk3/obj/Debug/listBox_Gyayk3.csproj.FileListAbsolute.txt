@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\listBox_Gyayk3\bin\Debug\listBox_Gyayk3.exe.config
+C:\Users\balazs.david.420\source\repos\listBox_Gyayk3\bin\Debug\listBox_Gyayk3.exe
+C:\Users\balazs.david.420\source\repos\listBox_Gyayk3\bin\Debug\listBox_Gyayk3.pdb
+C:\Users\balazs.david.420\source\repos\listBox_Gyayk3\obj\Debug\listBox_Gyayk3.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\listBox_Gyayk3\obj\Debug\listBox_Gyayk3.Form1.resources
+C:\Users\balazs.david.420\source\repos\listBox_Gyayk3\obj\Debug\listBox_Gyayk3.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\listBox_Gyayk3\obj\Debug\listBox_Gyayk3.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\listBox_Gyayk3\obj\Debug\listBox_Gyayk3.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\listBox_Gyayk3\obj\Debug\listBox_Gyayk3.exe
+C:\Users\balazs.david.420\source\repos\listBox_Gyayk3\obj\Debug\listBox_Gyayk3.pdb
