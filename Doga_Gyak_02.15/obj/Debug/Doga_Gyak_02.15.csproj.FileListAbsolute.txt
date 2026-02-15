@@ -1,0 +1,11 @@
+C:\Users\Dávid\source\repos\Doga_Gyak_02.15\bin\Debug\Doga_Gyak_02.15.exe.config
+C:\Users\Dávid\source\repos\Doga_Gyak_02.15\bin\Debug\Doga_Gyak_02.15.exe
+C:\Users\Dávid\source\repos\Doga_Gyak_02.15\bin\Debug\Doga_Gyak_02.15.pdb
+C:\Users\Dávid\source\repos\Doga_Gyak_02.15\obj\Debug\Doga_Gyak_02.15.csproj.AssemblyReference.cache
+C:\Users\Dávid\source\repos\Doga_Gyak_02.15\obj\Debug\Doga_Gyak_02._15.Form1.resources
+C:\Users\Dávid\source\repos\Doga_Gyak_02.15\obj\Debug\Doga_Gyak_02._15.Properties.Resources.resources
+C:\Users\Dávid\source\repos\Doga_Gyak_02.15\obj\Debug\Doga_Gyak_02.15.csproj.GenerateResource.cache
+C:\Users\Dávid\source\repos\Doga_Gyak_02.15\obj\Debug\Doga_Gyak_02.15.csproj.CoreCompileInputs.cache
+C:\Users\Dávid\source\repos\Doga_Gyak_02.15\obj\Debug\Doga_Gyak_02.15.exe
+C:\Users\Dávid\source\repos\Doga_Gyak_02.15\obj\Debug\Doga_Gyak_02.15.pdb
+C:\Users\Dávid\source\repos\Doga_Gyak_02.15\obj\Debug\Doga_Gyak_02.15.exe.config
