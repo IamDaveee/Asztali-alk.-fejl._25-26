@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\Combobox_Gyak\bin\Debug\Combobox_Gyak.exe.config
+C:\Users\balazs.david.420\source\repos\Combobox_Gyak\bin\Debug\Combobox_Gyak.exe
+C:\Users\balazs.david.420\source\repos\Combobox_Gyak\bin\Debug\Combobox_Gyak.pdb
+C:\Users\balazs.david.420\source\repos\Combobox_Gyak\obj\Debug\Combobox_Gyak.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\Combobox_Gyak\obj\Debug\Combobox_Gyak.Form1.resources
+C:\Users\balazs.david.420\source\repos\Combobox_Gyak\obj\Debug\Combobox_Gyak.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\Combobox_Gyak\obj\Debug\Combobox_Gyak.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\Combobox_Gyak\obj\Debug\Combobox_Gyak.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\Combobox_Gyak\obj\Debug\Combobox_Gyak.exe
+C:\Users\balazs.david.420\source\repos\Combobox_Gyak\obj\Debug\Combobox_Gyak.pdb
