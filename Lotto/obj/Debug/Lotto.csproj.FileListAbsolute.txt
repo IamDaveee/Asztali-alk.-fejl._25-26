@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\Lotto\bin\Debug\Lotto.exe.config
+C:\Users\balazs.david.420\source\repos\Lotto\bin\Debug\Lotto.exe
+C:\Users\balazs.david.420\source\repos\Lotto\bin\Debug\Lotto.pdb
+C:\Users\balazs.david.420\source\repos\Lotto\obj\Debug\Lotto.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\Lotto\obj\Debug\Lotto.Form1.resources
+C:\Users\balazs.david.420\source\repos\Lotto\obj\Debug\Lotto.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\Lotto\obj\Debug\Lotto.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\Lotto\obj\Debug\Lotto.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\Lotto\obj\Debug\Lotto.exe
+C:\Users\balazs.david.420\source\repos\Lotto\obj\Debug\Lotto.pdb

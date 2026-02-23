@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\Beolvasas\bin\Debug\Beolvasas.exe.config
+C:\Users\balazs.david.420\source\repos\Beolvasas\bin\Debug\Beolvasas.exe
+C:\Users\balazs.david.420\source\repos\Beolvasas\bin\Debug\Beolvasas.pdb
+C:\Users\balazs.david.420\source\repos\Beolvasas\obj\Debug\Beolvasas.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\Beolvasas\obj\Debug\Beolvasas.Form1.resources
+C:\Users\balazs.david.420\source\repos\Beolvasas\obj\Debug\Beolvasas.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\Beolvasas\obj\Debug\Beolvasas.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\Beolvasas\obj\Debug\Beolvasas.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\Beolvasas\obj\Debug\Beolvasas.exe
+C:\Users\balazs.david.420\source\repos\Beolvasas\obj\Debug\Beolvasas.pdb
