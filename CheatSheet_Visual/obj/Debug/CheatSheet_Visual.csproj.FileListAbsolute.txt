@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\CheatSheet_Visual\bin\Debug\CheatSheet_Visual.exe.config
+C:\Users\balazs.david.420\source\repos\CheatSheet_Visual\bin\Debug\CheatSheet_Visual.exe
+C:\Users\balazs.david.420\source\repos\CheatSheet_Visual\bin\Debug\CheatSheet_Visual.pdb
+C:\Users\balazs.david.420\source\repos\CheatSheet_Visual\obj\Debug\CheatSheet_Visual.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\CheatSheet_Visual\obj\Debug\CheatSheet_Visual.Form1.resources
+C:\Users\balazs.david.420\source\repos\CheatSheet_Visual\obj\Debug\CheatSheet_Visual.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\CheatSheet_Visual\obj\Debug\CheatSheet_Visual.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\CheatSheet_Visual\obj\Debug\CheatSheet_Visual.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\CheatSheet_Visual\obj\Debug\CheatSheet_Visual.exe
+C:\Users\balazs.david.420\source\repos\CheatSheet_Visual\obj\Debug\CheatSheet_Visual.pdb
