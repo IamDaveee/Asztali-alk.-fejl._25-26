@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\Dolgozo_03.09\bin\Debug\Dolgozo_03.09.exe.config
+C:\Users\balazs.david.420\source\repos\Dolgozo_03.09\bin\Debug\Dolgozo_03.09.exe
+C:\Users\balazs.david.420\source\repos\Dolgozo_03.09\bin\Debug\Dolgozo_03.09.pdb
+C:\Users\balazs.david.420\source\repos\Dolgozo_03.09\obj\Debug\Dolgozo_03.09.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\Dolgozo_03.09\obj\Debug\Dolgozo_03._09.Form1.resources
+C:\Users\balazs.david.420\source\repos\Dolgozo_03.09\obj\Debug\Dolgozo_03._09.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\Dolgozo_03.09\obj\Debug\Dolgozo_03.09.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\Dolgozo_03.09\obj\Debug\Dolgozo_03.09.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\Dolgozo_03.09\obj\Debug\Dolgozo_03.09.exe
+C:\Users\balazs.david.420\source\repos\Dolgozo_03.09\obj\Debug\Dolgozo_03.09.pdb
