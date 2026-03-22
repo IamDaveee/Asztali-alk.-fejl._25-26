@@ -8,3 +8,14 @@ C:\Users\balazs.david.420\source\repos\SpaceShuttleProject_BalázsDávid\obj\Deb
 C:\Users\balazs.david.420\source\repos\SpaceShuttleProject_BalázsDávid\obj\Debug\SpaceShuttleProject_BalázsDávid.exe
 C:\Users\balazs.david.420\source\repos\SpaceShuttleProject_BalázsDávid\obj\Debug\SpaceShuttleProject_BalázsDávid.pdb
 C:\Users\balazs.david.420\source\repos\SpaceShuttleProject_BalázsDávid\obj\Debug\SpaceShuttleProject_BalázsDávid.Form1.resources
+C:\Users\Dávid\source\repos\SpaceShuttleProject_BalázsDávid\bin\Debug\SpaceShuttleProject_BalázsDávid.exe.config
+C:\Users\Dávid\source\repos\SpaceShuttleProject_BalázsDávid\bin\Debug\SpaceShuttleProject_BalázsDávid.exe
+C:\Users\Dávid\source\repos\SpaceShuttleProject_BalázsDávid\bin\Debug\SpaceShuttleProject_BalázsDávid.pdb
+C:\Users\Dávid\source\repos\SpaceShuttleProject_BalázsDávid\obj\Debug\SpaceShuttleProject_BalázsDávid.csproj.AssemblyReference.cache
+C:\Users\Dávid\source\repos\SpaceShuttleProject_BalázsDávid\obj\Debug\SpaceShuttleProject_BalázsDávid.exe.config
+C:\Users\Dávid\source\repos\SpaceShuttleProject_BalázsDávid\obj\Debug\SpaceShuttleProject_BalázsDávid.Form1.resources
+C:\Users\Dávid\source\repos\SpaceShuttleProject_BalázsDávid\obj\Debug\SpaceShuttleProject_BalázsDávid.Properties.Resources.resources
+C:\Users\Dávid\source\repos\SpaceShuttleProject_BalázsDávid\obj\Debug\SpaceShuttleProject_BalázsDávid.csproj.GenerateResource.cache
+C:\Users\Dávid\source\repos\SpaceShuttleProject_BalázsDávid\obj\Debug\SpaceShuttleProject_BalázsDávid.csproj.CoreCompileInputs.cache
+C:\Users\Dávid\source\repos\SpaceShuttleProject_BalázsDávid\obj\Debug\SpaceShuttleProject_BalázsDávid.exe
+C:\Users\Dávid\source\repos\SpaceShuttleProject_BalázsDávid\obj\Debug\SpaceShuttleProject_BalázsDávid.pdb
