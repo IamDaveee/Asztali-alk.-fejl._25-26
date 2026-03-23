@@ -28,6 +28,10 @@ namespace SpaceShuttleProject_BalázsDávid
         static List<string> content = new List<string>();
 
         static string FileName = "";
+        static string DestFolder = "";
+        static string DestFolder2 = "";
+
+        static string selectedSpaceship = "";
 
         static void CreateAllHeader()
         {
@@ -52,8 +56,6 @@ namespace SpaceShuttleProject_BalázsDávid
         private void btnOpen_Click(object sender, EventArgs e)
         {
             int count = 0;
-            int landedStation = 0;
-            int kennedy = 0;
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Title = "Select File";
             openFileDialog1.InitialDirectory = @"C:\";//--"C:\\";
@@ -64,7 +66,7 @@ namespace SpaceShuttleProject_BalázsDávid
             {
                 MessageBox.Show("You didn't select the file!");
             }
-            FileName=openFileDialog1.FileName;
+            FileName = openFileDialog1.FileName;
             listBox1.Items.Clear();
             File.ReadAllLines($@"{openFileDialog1.FileName}", Encoding.Default).ToList().ForEach(x => adatok.Add(new SpaceShuttle(x)));
             listBox1.Items.Add($"Kód | Dátum | Űrsikló | Napok Száma | Óra | Űrközpont | Legénység Száma |");
@@ -75,21 +77,9 @@ namespace SpaceShuttleProject_BalázsDávid
                 {
                     urhajok.Add(item.ursiklo);
                 }
-                if (item.legenyseg<5)
+                if (item.legenyseg < 5)
                 {
                     count++;
-                }
-                if (item.urkozpont!="nem landolt")
-                {
-                    if (item.urkozpont=="Kennedy")
-                    {
-                        kennedy++;
-                        landedStation++;
-                    }
-                    else
-                    {
-                        landedStation++;
-                    }
                 }
             }
             comboBox1.Items.Clear();
@@ -104,16 +94,13 @@ namespace SpaceShuttleProject_BalázsDávid
                 CheckBox cb = (CheckBox)this.Controls.Find("checkBox" + i, true)[0];
                 cb.Checked = true;
             }
-            txtAllMission.Text=Convert.ToString(listBox1.Items.Count-1);
+            txtAllMission.Text = Convert.ToString(listBox1.Items.Count - 1);
             txtAllMission.Visible = true;
-            lblAllCrew.Text = Convert.ToString(adatok.Sum(x=>x.legenyseg)) + " fő";
+            lblAllCrew.Text = Convert.ToString(adatok.Sum(x => x.legenyseg)) + " fő";
             lblAllCrew.Visible = true;
 
             lblLeesFive.Visible = true;
             lblLeesFive.Text = Convert.ToString(count) + " db";
-
-            lblKennedy.Text = Convert.ToString(Math.Round(Convert.ToDouble(kennedy)/Convert.ToDouble(landedStation)*100,0)) + "%";
-            lblKennedy.Visible = true;
 
             rdbFilter.Checked = true;
         }
@@ -122,38 +109,72 @@ namespace SpaceShuttleProject_BalázsDávid
         {
             int count = 0;
             string selected = Convert.ToString(comboBox1.SelectedItem);
-            if (selected=="Összes")
+            selectedSpaceship = selected;
+            int landedStation = 0;
+            int kennedy = 0;
+            if (selected == "Összes")
             {
                 listBox1.Items.Clear();
                 listBox1.Items.Add($"Kód | Dátum | Űrsikló | Napok Száma | Óra | Űrközpont | Legénység Száma |");
                 foreach (var item in adatok)
                 {
                     listBox1.Items.Add($"{item.kod} | {item.datum} | {item.ursiklo} | {item.nap} | {item.ora} | {item.urkozpont} | {item.legenyseg} |");
-                    if (item.legenyseg<5)
+                    if (item.legenyseg < 5)
                     {
                         count++;
                     }
+                    if (item.urkozpont != "nem landolt")
+                    {
+                        if (item.urkozpont == "Kennedy")
+                        {
+                            kennedy++;
+                            landedStation++;
+                        }
+                        else
+                        {
+                            landedStation++;
+                        }
+                    }
                 }
                 lblAllCrew.Text = Convert.ToString(adatok.Sum(x => x.legenyseg)) + " fő";
-                var mostOut = adatok.OrderBy(x=>x.nap).ThenBy(x=>x.ora).LastOrDefault();
-                txtMostOut.Text = $"Küldetés kódja: {mostOut.kod}\r\nŰrsikló: {mostOut.ursiklo}\r\nŰrben töltött idő: {mostOut.nap*24+mostOut.ora} óra";
+                var mostOut = adatok.OrderBy(x => x.nap).ThenBy(x => x.ora).LastOrDefault();
+                txtMostOut.Text = $"Küldetés kódja: {mostOut.kod}\r\nŰrsikló: {mostOut.ursiklo}\r\nŰrben töltött idő: {mostOut.nap * 24 + mostOut.ora} óra";
                 txtLatest.Visible = false;
                 label6.Visible = false;
                 label7.Visible = true;
                 txtMostOut.Visible = true;
+
+                lblKennedy.Text = Convert.ToString(Math.Round(Convert.ToDouble(kennedy) / Convert.ToDouble(landedStation) * 100, 0)) + "%";
+                lblKennedy.Visible = true;
             }
             else
             {
                 listBox1.Items.Clear();
                 listBox1.Items.Add($"Kód | Dátum | Űrsikló | Napok Száma | Óra | Űrközpont | Legénység Száma |");
+
+                landedStation = 0;
+                kennedy = 0;
+
                 foreach (var item in adatok)
                 {
-                    if (item.ursiklo==selected)
+                    if (item.ursiklo == selected)
                     {
                         listBox1.Items.Add($"{item.kod} | {item.datum} | {item.ursiklo} | {item.nap} | {item.ora} | {item.urkozpont} | {item.legenyseg} |");
-                        if (item.legenyseg<5)
+                        if (item.legenyseg < 5)
                         {
                             count++;
+                        }
+                        if (item.urkozpont != "nem landolt")
+                        {
+                            if (item.urkozpont == "Kennedy")
+                            {
+                                kennedy++;
+                                landedStation++;
+                            }
+                            else
+                            {
+                                landedStation++;
+                            }
                         }
                     }
                 }
@@ -165,6 +186,8 @@ namespace SpaceShuttleProject_BalázsDávid
                 txtLatest.Visible = true;
                 txtMostOut.Visible = false;
                 label7.Visible = false;
+
+                lblKennedy.Text = Convert.ToString(Math.Round(Convert.ToDouble(kennedy) / Convert.ToDouble(landedStation) * 100, 0)) + "%";
             }
             txtFilterMission.Text = Convert.ToString(listBox1.Items.Count - 1);
             txtFilterMission.Visible = true;
@@ -173,7 +196,7 @@ namespace SpaceShuttleProject_BalázsDávid
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (listBox1.Items.Count==0)
+            if (listBox1.Items.Count == 0)
             {
                 MessageBox.Show("Kérem válasszon egy fájlt kezdés előtt, a 'Megynyitás' gombbal.");
             }
@@ -182,7 +205,7 @@ namespace SpaceShuttleProject_BalázsDávid
                 filters.Clear();
                 header.Clear();
                 content.Clear();
-                string customHeader="";
+                string customHeader = "";
                 string customContent = "";
                 for (int i = 1; i <= 7; i++)
                 {
@@ -200,13 +223,13 @@ namespace SpaceShuttleProject_BalázsDávid
                 CreateAllContent();
                 for (int i = 0; i < filters.Count; i++)
                 {
-                    if (filters[i]==true)
+                    if (filters[i] == true)
                     {
                         customHeader += header[i];
                     }
                 }
 
-                if (Convert.ToString(comboBox1.SelectedItem)=="Összes")
+                if (Convert.ToString(comboBox1.SelectedItem) == "Összes")
                 {
                     listBox1.Items.Clear();
                     listBox1.Items.Add($"{customHeader}");
@@ -269,7 +292,7 @@ namespace SpaceShuttleProject_BalázsDávid
 
         private void btnAll_Click(object sender, EventArgs e)
         {
-            if (listBox1.Items.Count!=0)
+            if (listBox1.Items.Count != 0)
             {
                 for (int i = 1; i <= 7; i++)
                 {
@@ -281,14 +304,14 @@ namespace SpaceShuttleProject_BalázsDávid
             {
                 MessageBox.Show("Kérem válasszon egy fájlt kezdés előtt, a 'Megynyitás' gombbal.");
             }
-            
+
         }
 
         private void btnYear_Click(object sender, EventArgs e)
         {
             string year = Interaction.InputBox("Melyik évben keresi a számokat?", "Év darabszám", "", 100, 100);
             int count = 0;
-            if (year=="")
+            if (year == "")
             {
                 MessageBox.Show("Kérem adja meg az évet a mezőbe");
             }
@@ -298,15 +321,15 @@ namespace SpaceShuttleProject_BalázsDávid
                 {
                     foreach (var item in adatok)
                     {
-                        string[] tört=item.datum.ToString().Split('.');
-                        if (Convert.ToInt32(tört[0])==Convert.ToInt32(year))
+                        string[] tört = item.datum.ToString().Split('.');
+                        if (Convert.ToInt32(tört[0]) == Convert.ToInt32(year))
                         {
                             count++;
                         }
                     }
                     MessageBox.Show($"{count} alkalommal indult űrsikló ebben az évben: {Convert.ToInt32(year)}");
                 }
-                
+
                 else
                 {
                     MessageBox.Show($"{Convert.ToInt32(year)} évben nem indult űrsikló");
@@ -316,28 +339,67 @@ namespace SpaceShuttleProject_BalázsDávid
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            FileName = Interaction.InputBox("Milyen néven mentsem a fájlt?", "Fájl Neve", "newFile.txt", 100, 100);
-            //hova
+            if (rdbAll.Checked)
+            {
+                FileName = Interaction.InputBox("Milyen néven mentsem a fájlt?", "Fájl Neve", $"newFile", 100, 100);
+                FolderBrowserDialog diag = new FolderBrowserDialog();
+                if (diag.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    DestFolder = diag.SelectedPath;
+                }
+                else
+                { MessageBox.Show("Nem választott mappát!"); }
 
+                if (DestFolder != "")
+                {
+                    using (StreamWriter sw = new StreamWriter(Path.Combine(DestFolder, FileName + ".csv"), false, new UTF8Encoding(true)))
+                    {
+                        sw.WriteLine($"Kód;Dátum;Űrsikló;Napok Száma;Óra;Űrközpont;Legénység Száma");
+                        foreach (var item in adatok)
+                        {
+                            sw.WriteLine($"{item.kod};{item.datum};{item.ursiklo};{item.nap};{item.ora};{item.urkozpont};{item.legenyseg}");
+                        }
+                        sw.Close();
+                        MessageBox.Show("Sikeres Mentés!");
+                    }
+                }
+
+            }
             if (rdbFilter.Checked)
             {
-                StreamWriter sw = new StreamWriter($@"{FileName}");
-                foreach (string item in listBox1.Items)
+                FileName = Interaction.InputBox("Milyen néven mentsem a fájlt?", "Fájl Neve", $"{selectedSpaceship}", 100, 100);
+                FolderBrowserDialog diag2 = new FolderBrowserDialog();
+                if (diag2.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    string [] egysor = item.Trim().Split('|');
-                    for (int i = 0; i < egysor.Length; i++)
+                    DestFolder2 = diag2.SelectedPath;
+                }
+                else
+                { MessageBox.Show("Nem választott mappát!"); }
+
+                if (DestFolder2 != "")
+                {
+                    using (StreamWriter sw = new StreamWriter(Path.Combine(DestFolder2, FileName + ".csv"), false, new UTF8Encoding(true)))
                     {
-                        if (i==egysor.Length)
+                        foreach (string item in listBox1.Items)
                         {
-                            sw.Write($"{egysor[i]}");
+                            string[] egysor = item.Trim().Split('|');
+                            string oneLine = "";
+                            for (int i = 0; i < egysor.Length; i++)
+                            {
+                                if (i == egysor.Length - 1)
+                                {
+                                    oneLine += ($"{egysor[i]}");
+                                }
+                                else
+                                {
+                                    oneLine += ($"{egysor[i]};");
+                                }
+                            }
+                            sw.WriteLine(oneLine);
                         }
-                        else
-                        {
-                            sw.Write($"{egysor[i]};");
-                        }
-                        sw.WriteLine();
+                        sw.Close();
+                        MessageBox.Show("Sikeres Mentés!");
                     }
-                    
                 }
             }
         }
