@@ -1,0 +1,11 @@
+C:\Users\Dávid\source\repos\Otthoni_03.29\bin\Debug\Otthoni_03.29.exe.config
+C:\Users\Dávid\source\repos\Otthoni_03.29\bin\Debug\Otthoni_03.29.exe
+C:\Users\Dávid\source\repos\Otthoni_03.29\bin\Debug\Otthoni_03.29.pdb
+C:\Users\Dávid\source\repos\Otthoni_03.29\obj\Debug\Otthoni_03.29.csproj.AssemblyReference.cache
+C:\Users\Dávid\source\repos\Otthoni_03.29\obj\Debug\Otthoni_03._29.Form1.resources
+C:\Users\Dávid\source\repos\Otthoni_03.29\obj\Debug\Otthoni_03._29.Properties.Resources.resources
+C:\Users\Dávid\source\repos\Otthoni_03.29\obj\Debug\Otthoni_03.29.csproj.GenerateResource.cache
+C:\Users\Dávid\source\repos\Otthoni_03.29\obj\Debug\Otthoni_03.29.csproj.CoreCompileInputs.cache
+C:\Users\Dávid\source\repos\Otthoni_03.29\obj\Debug\Otthoni_03.29.exe
+C:\Users\Dávid\source\repos\Otthoni_03.29\obj\Debug\Otthoni_03.29.pdb
+C:\Users\Dávid\source\repos\Otthoni_03.29\obj\Debug\Otthoni_03.29.exe.config
