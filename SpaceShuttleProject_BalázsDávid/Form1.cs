@@ -352,16 +352,15 @@ namespace SpaceShuttleProject_BalázsDávid
 
                 if (DestFolder != "")
                 {
-                    using (StreamWriter sw = new StreamWriter(Path.Combine(DestFolder, FileName + ".csv"), false, new UTF8Encoding(true))) //opening a new file where the user selected, and using the given filename
+                    StreamWriter sw = new StreamWriter(Path.Combine(DestFolder, FileName + ".csv"), false, Encoding.Default); //opening a new file where the user selected, and using the given filename
+                    
+                    sw.WriteLine($"Kód;Dátum;Űrsikló;Napok Száma;Óra;Űrközpont;Legénység Száma"); //header
+                    foreach (var item in adatok)
                     {
-                        sw.WriteLine($"Kód;Dátum;Űrsikló;Napok Száma;Óra;Űrközpont;Legénység Száma"); //header
-                        foreach (var item in adatok)
-                        {
-                            sw.WriteLine($"{item.kod};{item.datum};{item.ursiklo};{item.nap};{item.ora};{item.urkozpont};{item.legenyseg}"); //writeing one line of the database, while going trough the database
-                        }
-                        sw.Close();
-                        MessageBox.Show("Sikeres Mentés!");
+                        sw.WriteLine($"{item.kod};{item.datum};{item.ursiklo};{item.nap};{item.ora};{item.urkozpont};{item.legenyseg}"); //writeing one line of the database, while going trough the database
                     }
+                    sw.Close();
+                    MessageBox.Show("Sikeres Mentés!");
                 }
 
             }
@@ -378,30 +377,48 @@ namespace SpaceShuttleProject_BalázsDávid
 
                 if (DestFolder2 != "")
                 {
-                    using (StreamWriter sw = new StreamWriter(Path.Combine(DestFolder2, FileName + ".csv"), false, new UTF8Encoding(true)))
+                    StreamWriter sw = new StreamWriter(Path.Combine(DestFolder2, FileName + ".csv"), false, Encoding.Default);
+                    
+                    foreach (string item in listBox1.Items)
                     {
-                        foreach (string item in listBox1.Items)
+                        string[] egysor = item.Trim().Split('|'); //splitting the current line
+                        string oneLine = "";
+                        for (int i = 0; i < egysor.Length; i++)
                         {
-                            string[] egysor = item.Trim().Split('|'); //splitting the current line
-                            string oneLine = "";
-                            for (int i = 0; i < egysor.Length; i++)
+                            if (i == egysor.Length - 1) //if the last item
                             {
-                                if (i == egysor.Length - 1) //if the last item
-                                {
-                                    oneLine += ($"{egysor[i]}");
-                                }
-                                else
-                                {
-                                    oneLine += ($"{egysor[i]};"); //if not the last item of the cuurrent line
-                                }
+                                oneLine += ($"{egysor[i]}");
                             }
-                            sw.WriteLine(oneLine); //write the line into the file, and go line by line
+                            else
+                            {
+                                oneLine += ($"{egysor[i]};"); //if not the last item of the cuurrent line
+                            }
                         }
-                        sw.Close();
-                        MessageBox.Show("Sikeres Mentés!");
+                        sw.WriteLine(oneLine); //write the line into the file, and go line by line
                     }
+                    sw.Close();
+                    MessageBox.Show("Sikeres Mentés!");
                 }
             }
+        }
+
+        private void btnSaveTxt_Click(object sender, EventArgs e)
+        {
+            string fileName = Interaction.InputBox("Milyen néven mentsem a fájlt?", "Fájl Neve", "", 100, 100);
+
+            StreamWriter sw = new StreamWriter($"{fileName}.txt", false, Encoding.Default);
+
+            adatok.GroupBy(x => x.ursiklo)
+            .Select(g => new
+            {
+                Ursiklo = g.Key,
+                OsszesNap = g.Sum(x => x.nap)
+            })
+            .ToList()
+            .ForEach(x => sw.WriteLine($"{x.Ursiklo}: {x.OsszesNap} nap"));
+
+            sw.Close();
+            MessageBox.Show("Sikeres mentés!");
         }
     }
 }

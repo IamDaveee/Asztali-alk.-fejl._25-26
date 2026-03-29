@@ -1,0 +1,5 @@
+Columbia: 284 nap
+Challenger: 59 nap
+Discovery: 342 nap
+Atlantis: 284 nap
+Endeavour: 278 nap

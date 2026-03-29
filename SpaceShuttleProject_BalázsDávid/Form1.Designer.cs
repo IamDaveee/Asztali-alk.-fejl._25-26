@@ -62,6 +62,7 @@ namespace SpaceShuttleProject_BalázsDávid
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rdbAll = new System.Windows.Forms.RadioButton();
             this.rdbFilter = new System.Windows.Forms.RadioButton();
+            this.btnSaveTxt = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -393,11 +394,22 @@ namespace SpaceShuttleProject_BalázsDávid
             this.rdbFilter.Text = "Szűrt Tábla";
             this.rdbFilter.UseVisualStyleBackColor = true;
             // 
+            // btnSaveTxt
+            // 
+            this.btnSaveTxt.Location = new System.Drawing.Point(624, 292);
+            this.btnSaveTxt.Name = "btnSaveTxt";
+            this.btnSaveTxt.Size = new System.Drawing.Size(150, 23);
+            this.btnSaveTxt.TabIndex = 6;
+            this.btnSaveTxt.Text = "Csoportosított napok száma";
+            this.btnSaveTxt.UseVisualStyleBackColor = true;
+            this.btnSaveTxt.Click += new System.EventHandler(this.btnSaveTxt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSaveTxt);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.lblKennedy);
             this.Controls.Add(this.label8);
@@ -467,6 +479,7 @@ namespace SpaceShuttleProject_BalázsDávid
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rdbAll;
         private System.Windows.Forms.RadioButton rdbFilter;
+        private System.Windows.Forms.Button btnSaveTxt;
     }
 }
 
