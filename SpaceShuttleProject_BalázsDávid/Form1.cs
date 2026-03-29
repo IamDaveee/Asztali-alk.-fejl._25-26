@@ -64,7 +64,7 @@ namespace SpaceShuttleProject_BalázsDávid
             openFileDialog1.ShowDialog(); //opening the dialog
             if (openFileDialog1.FileName == "")
             {
-                MessageBox.Show("You didn't select the file!");
+                MessageBox.Show("Nem választott fájlt!");
             }
             FileName = openFileDialog1.FileName;
             listBox1.Items.Clear(); //clearing the listbox, so multiple opening is possible after each other

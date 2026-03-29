@@ -60,8 +60,8 @@ namespace SpaceShuttleProject_BalázsDávid
             this.label8 = new System.Windows.Forms.Label();
             this.lblKennedy = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rdbFilter = new System.Windows.Forms.RadioButton();
             this.rdbAll = new System.Windows.Forms.RadioButton();
+            this.rdbFilter = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -373,16 +373,6 @@ namespace SpaceShuttleProject_BalázsDávid
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mentés Másként";
             // 
-            // rdbFilter
-            // 
-            this.rdbFilter.AutoSize = true;
-            this.rdbFilter.Location = new System.Drawing.Point(6, 19);
-            this.rdbFilter.Name = "rdbFilter";
-            this.rdbFilter.Size = new System.Drawing.Size(79, 17);
-            this.rdbFilter.TabIndex = 4;
-            this.rdbFilter.Text = "Szűrt Tábla";
-            this.rdbFilter.UseVisualStyleBackColor = true;
-            // 
             // rdbAll
             // 
             this.rdbAll.AutoSize = true;
@@ -392,6 +382,16 @@ namespace SpaceShuttleProject_BalázsDávid
             this.rdbAll.TabIndex = 5;
             this.rdbAll.Text = "Teljes Tábla";
             this.rdbAll.UseVisualStyleBackColor = true;
+            // 
+            // rdbFilter
+            // 
+            this.rdbFilter.AutoSize = true;
+            this.rdbFilter.Location = new System.Drawing.Point(6, 19);
+            this.rdbFilter.Name = "rdbFilter";
+            this.rdbFilter.Size = new System.Drawing.Size(79, 17);
+            this.rdbFilter.TabIndex = 4;
+            this.rdbFilter.Text = "Szűrt Tábla";
+            this.rdbFilter.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
