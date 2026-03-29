@@ -8,3 +8,14 @@ C:\Users\balazs.david.420\source\repos\ChatGPTTeszt\obj\Debug\ChatGPTTeszt.cspro
 C:\Users\balazs.david.420\source\repos\ChatGPTTeszt\obj\Debug\ChatGPTTeszt.csproj.CoreCompileInputs.cache
 C:\Users\balazs.david.420\source\repos\ChatGPTTeszt\obj\Debug\ChatGPTTeszt.exe
 C:\Users\balazs.david.420\source\repos\ChatGPTTeszt\obj\Debug\ChatGPTTeszt.pdb
+D:\Letöltések\Asztali-alk.-fejl._25-26-main (1)\Asztali-alk.-fejl._25-26-main\ChatGPTTeszt\bin\Debug\ChatGPTTeszt.exe.config
+D:\Letöltések\Asztali-alk.-fejl._25-26-main (1)\Asztali-alk.-fejl._25-26-main\ChatGPTTeszt\bin\Debug\ChatGPTTeszt.exe
+D:\Letöltések\Asztali-alk.-fejl._25-26-main (1)\Asztali-alk.-fejl._25-26-main\ChatGPTTeszt\bin\Debug\ChatGPTTeszt.pdb
+D:\Letöltések\Asztali-alk.-fejl._25-26-main (1)\Asztali-alk.-fejl._25-26-main\ChatGPTTeszt\obj\Debug\ChatGPTTeszt.csproj.AssemblyReference.cache
+D:\Letöltések\Asztali-alk.-fejl._25-26-main (1)\Asztali-alk.-fejl._25-26-main\ChatGPTTeszt\obj\Debug\ChatGPTTeszt.exe.config
+D:\Letöltések\Asztali-alk.-fejl._25-26-main (1)\Asztali-alk.-fejl._25-26-main\ChatGPTTeszt\obj\Debug\ChatGPTTeszt.Properties.Resources.resources
+D:\Letöltések\Asztali-alk.-fejl._25-26-main (1)\Asztali-alk.-fejl._25-26-main\ChatGPTTeszt\obj\Debug\ChatGPTTeszt.csproj.GenerateResource.cache
+D:\Letöltések\Asztali-alk.-fejl._25-26-main (1)\Asztali-alk.-fejl._25-26-main\ChatGPTTeszt\obj\Debug\ChatGPTTeszt.csproj.CoreCompileInputs.cache
+D:\Letöltések\Asztali-alk.-fejl._25-26-main (1)\Asztali-alk.-fejl._25-26-main\ChatGPTTeszt\obj\Debug\ChatGPTTeszt.exe
+D:\Letöltések\Asztali-alk.-fejl._25-26-main (1)\Asztali-alk.-fejl._25-26-main\ChatGPTTeszt\obj\Debug\ChatGPTTeszt.pdb
+D:\Letöltések\Asztali-alk.-fejl._25-26-main (1)\Asztali-alk.-fejl._25-26-main\ChatGPTTeszt\obj\Debug\ChatGPTTeszt.Form1.resources

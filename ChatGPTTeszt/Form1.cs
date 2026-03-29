@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace ChatGPTTeszt
 {
+
+
     public partial class Form1 : Form
     {
         List<Kuldetes> kuldetesek = new List<Kuldetes>();
@@ -18,6 +20,48 @@ namespace ChatGPTTeszt
 
             cmbUrsiklok.DropDownStyle = ComboBoxStyle.DropDownList;
             rdbOsszes.Checked = true;
+        }
+
+        class Kuldetes
+        {
+            public string Kod { get; set; }
+            public DateTime Datum { get; set; }
+            public string Ursiklo { get; set; }
+            public int Nap { get; set; }
+            public int Ora { get; set; }
+            public string Landolohely { get; set; }
+            public int Legenyseg { get; set; }
+
+            public Kuldetes(string sor)
+            {
+                string[] m = sor.Split(';');
+
+                Kod = m[0];
+                Datum = DateTime.ParseExact(m[1], "yyyy.MM.dd", CultureInfo.InvariantCulture);
+                Ursiklo = m[2];
+                Nap = int.Parse(m[3]);
+                Ora = int.Parse(m[4]);
+                Landolohely = m[5];
+                Legenyseg = int.Parse(m[6]);
+            }
+
+            public int OsszOra
+            {
+                get
+                {
+                    return Nap * 24 + Ora;
+                }
+            }
+
+            public override string ToString()
+            {
+                return Kod + " | " +
+                       Datum.ToString("yyyy.MM.dd") + " | " +
+                       Ursiklo + " | " +
+                       Nap + " nap " + Ora + " óra | " +
+                       Landolohely + " | " +
+                       Legenyseg + " fő";
+            }
         }
 
         private void btnMegnyitas_Click(object sender, EventArgs e)
@@ -32,9 +76,10 @@ namespace ChatGPTTeszt
                 {
                     megnyitottFajl = ofd.FileName;
                     Beolvasas(megnyitottFajl);
-                    AdatokMegjelenitese();
                     ComboBoxFeltoltese();
+                    AdatokMegjelenitese();
                     Statisztikak();
+
                     MessageBox.Show("Sikeres beolvasás!");
                 }
                 catch (Exception ex)
@@ -48,11 +93,13 @@ namespace ChatGPTTeszt
         {
             kuldetesek.Clear();
 
-            foreach (string sor in File.ReadAllLines(fajlNev, Encoding.UTF8))
+            string[] sorok = File.ReadAllLines(fajlNev, Encoding.UTF8);
+
+            for (int i = 0; i < sorok.Length; i++)
             {
-                if (!string.IsNullOrWhiteSpace(sor))
+                if (!string.IsNullOrWhiteSpace(sorok[i]))
                 {
-                    kuldetesek.Add(new Kuldetes(sor));
+                    kuldetesek.Add(new Kuldetes(sorok[i]));
                 }
             }
         }
@@ -61,34 +108,73 @@ namespace ChatGPTTeszt
         {
             lstKuldetesek.Items.Clear();
 
-            IEnumerable<Kuldetes> lista = kuldetesek;
-
-            if (rdbCsakColumbia.Checked)
+            for (int i = 0; i < kuldetesek.Count; i++)
             {
-                lista = lista.Where(x => x.Ursiklo == "Columbia");
-            }
+                Kuldetes k = kuldetesek[i];
 
-            if (cmbUrsiklok.SelectedIndex > 0)
-            {
-                string valasztott = cmbUrsiklok.SelectedItem.ToString();
-                lista = lista.Where(x => x.Ursiklo == valasztott);
-            }
+                if (rdbCsakColumbia.Checked)
+                {
+                    if (k.Ursiklo != "Columbia")
+                    {
+                        continue;
+                    }
+                }
 
-            foreach (var k in lista)
-            {
-                List<string> elemek = new List<string>();
+                if (cmbUrsiklok.SelectedIndex > 0)
+                {
+                    string valasztott = cmbUrsiklok.SelectedItem.ToString();
 
-                if (chkKod.Checked) elemek.Add(k.Kod);
-                if (chkDatum.Checked) elemek.Add(k.Datum.ToString("yyyy.MM.dd"));
-                if (chkUrsiklo.Checked) elemek.Add(k.Ursiklo);
-                if (chkIdo.Checked) elemek.Add($"{k.Nap} nap {k.Ora} óra");
-                if (chkLandolas.Checked) elemek.Add(k.Landolohely);
-                if (chkLegenyseg.Checked) elemek.Add($"{k.Legenyseg} fő");
+                    if (k.Ursiklo != valasztott)
+                    {
+                        continue;
+                    }
+                }
 
-                if (elemek.Count == 0)
+                string sor = "";
+
+                if (chkKod.Checked)
+                {
+                    sor += k.Kod;
+                }
+
+                if (chkDatum.Checked)
+                {
+                    if (sor != "") sor += " | ";
+                    sor += k.Datum.ToString("yyyy.MM.dd");
+                }
+
+                if (chkUrsiklo.Checked)
+                {
+                    if (sor != "") sor += " | ";
+                    sor += k.Ursiklo;
+                }
+
+                if (chkIdo.Checked)
+                {
+                    if (sor != "") sor += " | ";
+                    sor += k.Nap + " nap " + k.Ora + " óra";
+                }
+
+                if (chkLandolas.Checked)
+                {
+                    if (sor != "") sor += " | ";
+                    sor += k.Landolohely;
+                }
+
+                if (chkLegenyseg.Checked)
+                {
+                    if (sor != "") sor += " | ";
+                    sor += k.Legenyseg + " fő";
+                }
+
+                if (sor == "")
+                {
                     lstKuldetesek.Items.Add(k.ToString());
+                }
                 else
-                    lstKuldetesek.Items.Add(string.Join(" | ", elemek));
+                {
+                    lstKuldetesek.Items.Add(sor);
+                }
             }
         }
 
@@ -97,12 +183,33 @@ namespace ChatGPTTeszt
             cmbUrsiklok.Items.Clear();
             cmbUrsiklok.Items.Add("Összes");
 
-            foreach (string nev in kuldetesek
-                     .Select(x => x.Ursiklo)
-                     .Distinct()
-                     .OrderBy(x => x))
+            List<string> ursiklok = new List<string>();
+
+            for (int i = 0; i < kuldetesek.Count; i++)
             {
-                cmbUrsiklok.Items.Add(nev);
+                string aktualisNev = kuldetesek[i].Ursiklo;
+                bool marBenneVan = false;
+
+                for (int j = 0; j < ursiklok.Count; j++)
+                {
+                    if (ursiklok[j] == aktualisNev)
+                    {
+                        marBenneVan = true;
+                        break;
+                    }
+                }
+
+                if (!marBenneVan)
+                {
+                    ursiklok.Add(aktualisNev);
+                }
+            }
+
+            ursiklok.Sort();
+
+            for (int i = 0; i < ursiklok.Count; i++)
+            {
+                cmbUrsiklok.Items.Add(ursiklok[i]);
             }
 
             cmbUrsiklok.SelectedIndex = 0;
@@ -110,36 +217,84 @@ namespace ChatGPTTeszt
 
         private void Statisztikak()
         {
-            if (kuldetesek.Count == 0) return;
+            if (kuldetesek.Count == 0)
+            {
+                return;
+            }
 
-            // a) Hányszor küldtek űrhajót?
-            lblKuldetesDb.Text = $"Küldetések száma: {kuldetesek.Count}";
+            // a) Küldetések száma
+            lblKuldetesDb.Text = "Küldetések száma: " + kuldetesek.Count;
 
             // b) Összes utas
-            int osszUtas = kuldetesek.Sum(x => x.Legenyseg);
-            lblOsszUtasszam.Text = $"Összes szállított utas: {osszUtas} fő";
+            int osszUtas = 0;
+            for (int i = 0; i < kuldetesek.Count; i++)
+            {
+                osszUtas += kuldetesek[i].Legenyseg;
+            }
+            lblOsszUtasszam.Text = "Összes szállított utas: " + osszUtas + " fő";
 
-            // c) Kevesebb mint 5 fő
-            int kevesebbMint5 = kuldetesek.Count(x => x.Legenyseg < 5);
-            lblKevesebbMint5.Text = $"5 főnél kisebb legénységű küldetések: {kevesebbMint5} db";
+            // c) 5 főnél kisebb legénységű küldetések
+            int kevesebbMint5 = 0;
+            for (int i = 0; i < kuldetesek.Count; i++)
+            {
+                if (kuldetesek[i].Legenyseg < 5)
+                {
+                    kevesebbMint5++;
+                }
+            }
+            lblKevesebbMint5.Text = "5 főnél kisebb legénységű küldetések: " + kevesebbMint5 + " db";
 
             // d) Columbia utolsó útja
             DateTime columbiaDatum = new DateTime(2003, 2, 1);
-            var columbia = kuldetesek.FirstOrDefault(x => x.Ursiklo == "Columbia" && x.Datum == columbiaDatum);
+            Kuldetes columbia = null;
+
+            for (int i = 0; i < kuldetesek.Count; i++)
+            {
+                if (kuldetesek[i].Ursiklo == "Columbia" && kuldetesek[i].Datum == columbiaDatum)
+                {
+                    columbia = kuldetesek[i];
+                    break;
+                }
+            }
 
             if (columbia != null)
-                lblColumbia.Text = $"A Columbia utolsó útján {columbia.Legenyseg} asztronauta volt.";
+            {
+                lblColumbia.Text = "A Columbia utolsó útján " + columbia.Legenyseg + " asztronauta volt.";
+            }
             else
+            {
                 lblColumbia.Text = "A Columbia utolsó útja nem található.";
+            }
 
             // e) Leghosszabb küldetés
-            var leghosszabb = kuldetesek.OrderByDescending(x => x.OsszOra).First();
-            lblLeghosszabb.Text = $"Leghosszabb küldetés: {leghosszabb.Ursiklo}, {leghosszabb.Kod}, {leghosszabb.OsszOra} óra";
+            Kuldetes leghosszabb = kuldetesek[0];
 
-            // g) Kennedy landolások %
-            int kennedyDb = kuldetesek.Count(x => x.Landolohely == "Kennedy");
+            for (int i = 1; i < kuldetesek.Count; i++)
+            {
+                if (kuldetesek[i].OsszOra > leghosszabb.OsszOra)
+                {
+                    leghosszabb = kuldetesek[i];
+                }
+            }
+
+            lblLeghosszabb.Text = "Leghosszabb küldetés: " +
+                                  leghosszabb.Ursiklo + ", " +
+                                  leghosszabb.Kod + ", " +
+                                  leghosszabb.OsszOra + " óra";
+
+            // g) Kennedy landolások aránya
+            int kennedyDb = 0;
+
+            for (int i = 0; i < kuldetesek.Count; i++)
+            {
+                if (kuldetesek[i].Landolohely == "Kennedy")
+                {
+                    kennedyDb++;
+                }
+            }
+
             double szazalek = (double)kennedyDb / kuldetesek.Count * 100.0;
-            lblKennedy.Text = $"Kennedy landolások aránya: {szazalek:F2}%";
+            lblKennedy.Text = "Kennedy landolások aránya: " + szazalek.ToString("F2") + "%";
         }
 
         private void btnEvKereses_Click(object sender, EventArgs e)
@@ -150,18 +305,31 @@ namespace ChatGPTTeszt
                 return;
             }
 
-            if (!int.TryParse(txtEv.Text, out int ev))
+            int ev;
+            if (!int.TryParse(txtEv.Text, out ev))
             {
                 MessageBox.Show("Érvényes évszámot adj meg!");
                 return;
             }
 
-            int db = kuldetesek.Count(x => x.Datum.Year == ev);
+            int db = 0;
+
+            for (int i = 0; i < kuldetesek.Count; i++)
+            {
+                if (kuldetesek[i].Datum.Year == ev)
+                {
+                    db++;
+                }
+            }
 
             if (db == 0)
+            {
                 txtEvEredmeny.Text = "Ebben az évben nem indult küldetés";
+            }
             else
-                txtEvEredmeny.Text = $"Ebben az évben {db} küldetés indult.";
+            {
+                txtEvEredmeny.Text = "Ebben az évben " + db + " küldetés indult.";
+            }
         }
 
         private void btnTxtMentes_Click(object sender, EventArgs e)
@@ -181,26 +349,53 @@ namespace ChatGPTTeszt
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.Title = "Txt mentése";
             sfd.Filter = "Szövegfájl (*.txt)|*.txt";
-            sfd.FileName = txtFajlnev.Text.EndsWith(".txt") ? txtFajlnev.Text : txtFajlnev.Text + ".txt";
+
+            if (txtFajlnev.Text.EndsWith(".txt"))
+            {
+                sfd.FileName = txtFajlnev.Text;
+            }
+            else
+            {
+                sfd.FileName = txtFajlnev.Text + ".txt";
+            }
 
             if (sfd.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
-                    var csoportok = kuldetesek
-                        .GroupBy(x => x.Ursiklo)
-                        .Select(g => new
-                        {
-                            Ursiklo = g.Key,
-                            OsszNap = g.Sum(x => x.Nap)
-                        })
-                        .OrderBy(x => x.Ursiklo);
-
                     using (StreamWriter sw = new StreamWriter(sfd.FileName, false, Encoding.UTF8))
                     {
-                        foreach (var item in csoportok)
+                        List<string> feldolgozottUrsiklok = new List<string>();
+
+                        for (int i = 0; i < kuldetesek.Count; i++)
                         {
-                            sw.WriteLine($"{item.Ursiklo}: {item.OsszNap} nap");
+                            string aktualisUrsiklo = kuldetesek[i].Ursiklo;
+                            bool marFeldolgozva = false;
+
+                            for (int j = 0; j < feldolgozottUrsiklok.Count; j++)
+                            {
+                                if (feldolgozottUrsiklok[j] == aktualisUrsiklo)
+                                {
+                                    marFeldolgozva = true;
+                                    break;
+                                }
+                            }
+
+                            if (!marFeldolgozva)
+                            {
+                                int osszNap = 0;
+
+                                for (int j = 0; j < kuldetesek.Count; j++)
+                                {
+                                    if (kuldetesek[j].Ursiklo == aktualisUrsiklo)
+                                    {
+                                        osszNap += kuldetesek[j].Nap;
+                                    }
+                                }
+
+                                sw.WriteLine(aktualisUrsiklo + ": " + osszNap + " nap");
+                                feldolgozottUrsiklok.Add(aktualisUrsiklo);
+                            }
                         }
                     }
 
@@ -215,33 +410,55 @@ namespace ChatGPTTeszt
 
         private void rdbOsszes_CheckedChanged(object sender, EventArgs e)
         {
-            if (kuldetesek.Count > 0)
-                AdatokMegjelenitese();
+            Frissit();
         }
 
         private void rdbCsakColumbia_CheckedChanged(object sender, EventArgs e)
         {
-            if (kuldetesek.Count > 0)
-                AdatokMegjelenitese();
+            Frissit();
         }
 
         private void cmbUrsiklok_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (kuldetesek.Count > 0)
-                AdatokMegjelenitese();
+            Frissit();
         }
 
-        private void chkKod_CheckedChanged(object sender, EventArgs e) => Frissit();
-        private void chkDatum_CheckedChanged(object sender, EventArgs e) => Frissit();
-        private void chkUrsiklo_CheckedChanged(object sender, EventArgs e) => Frissit();
-        private void chkIdo_CheckedChanged(object sender, EventArgs e) => Frissit();
-        private void chkLandolas_CheckedChanged(object sender, EventArgs e) => Frissit();
-        private void chkLegenyseg_CheckedChanged(object sender, EventArgs e) => Frissit();
+        private void chkKod_CheckedChanged(object sender, EventArgs e)
+        {
+            Frissit();
+        }
+
+        private void chkDatum_CheckedChanged(object sender, EventArgs e)
+        {
+            Frissit();
+        }
+
+        private void chkUrsiklo_CheckedChanged(object sender, EventArgs e)
+        {
+            Frissit();
+        }
+
+        private void chkIdo_CheckedChanged(object sender, EventArgs e)
+        {
+            Frissit();
+        }
+
+        private void chkLandolas_CheckedChanged(object sender, EventArgs e)
+        {
+            Frissit();
+        }
+
+        private void chkLegenyseg_CheckedChanged(object sender, EventArgs e)
+        {
+            Frissit();
+        }
 
         private void Frissit()
         {
             if (kuldetesek.Count > 0)
+            {
                 AdatokMegjelenitese();
+            }
         }
     }
 }
