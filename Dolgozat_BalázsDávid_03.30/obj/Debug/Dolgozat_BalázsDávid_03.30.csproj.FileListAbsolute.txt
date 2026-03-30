@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\Dolgozat_BalázsDávid_03.30\bin\Debug\Dolgozat_BalázsDávid_03.30.exe.config
+C:\Users\balazs.david.420\source\repos\Dolgozat_BalázsDávid_03.30\bin\Debug\Dolgozat_BalázsDávid_03.30.exe
+C:\Users\balazs.david.420\source\repos\Dolgozat_BalázsDávid_03.30\bin\Debug\Dolgozat_BalázsDávid_03.30.pdb
+C:\Users\balazs.david.420\source\repos\Dolgozat_BalázsDávid_03.30\obj\Debug\Dolgozat_BalázsDávid_03.30.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\Dolgozat_BalázsDávid_03.30\obj\Debug\Dolgozat_BalázsDávid_03._30.Form1.resources
+C:\Users\balazs.david.420\source\repos\Dolgozat_BalázsDávid_03.30\obj\Debug\Dolgozat_BalázsDávid_03._30.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\Dolgozat_BalázsDávid_03.30\obj\Debug\Dolgozat_BalázsDávid_03.30.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\Dolgozat_BalázsDávid_03.30\obj\Debug\Dolgozat_BalázsDávid_03.30.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\Dolgozat_BalázsDávid_03.30\obj\Debug\Dolgozat_BalázsDávid_03.30.exe
+C:\Users\balazs.david.420\source\repos\Dolgozat_BalázsDávid_03.30\obj\Debug\Dolgozat_BalázsDávid_03.30.pdb

@@ -1,0 +1,20 @@
+Ország;Városok száma;Össznépesség (millió fõ)
+Japán;2;58,238645 millió fõ
+India;4;71,697757 millió fõ
+Kína;6;91,874283 millió fõ
+Brazília;2;33,968551 millió fõ
+Mexikó;1;20,998543 millió fõ
+Egyiptom;1;18,771769 millió fõ
+USA;2;30,90275 millió fõ
+Banglades;1;17,598228 millió fõ
+Pakisztán;1;16,617644 millió fõ
+Argentína;1;15,180176 millió fõ
+Törökország;1;14,163989 millió fõ
+Nigéria;1;13,122829 millió fõ
+Fülöp-szigetek;1;12,946263 millió fõ
+Oroszország;1;12,165704 millió fõ
+Kongói Demokratikus Köztársaság;1;11,586914 millió fõ
+Franciaország;1;10,843285 millió fõ
+Indonézia;1;10,323142 millió fõ
+UK;1;10,313307 millió fõ
+Peru;1;9,897033 millió fõ
