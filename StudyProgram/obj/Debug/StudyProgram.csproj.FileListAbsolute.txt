@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\StudyProgram\bin\Debug\StudyProgram.exe.config
+C:\Users\balazs.david.420\source\repos\StudyProgram\bin\Debug\StudyProgram.exe
+C:\Users\balazs.david.420\source\repos\StudyProgram\bin\Debug\StudyProgram.pdb
+C:\Users\balazs.david.420\source\repos\StudyProgram\obj\Debug\StudyProgram.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\StudyProgram\obj\Debug\StudyProgram.Form1.resources
+C:\Users\balazs.david.420\source\repos\StudyProgram\obj\Debug\StudyProgram.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\StudyProgram\obj\Debug\StudyProgram.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\StudyProgram\obj\Debug\StudyProgram.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\StudyProgram\obj\Debug\StudyProgram.exe
+C:\Users\balazs.david.420\source\repos\StudyProgram\obj\Debug\StudyProgram.pdb
