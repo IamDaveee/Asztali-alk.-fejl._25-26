@@ -1,0 +1,3 @@
+Készítsen tanulástámogató grafikus alkalmazást tanult ismeretei alapján! Az alkalmazás valósítsa meg a kívülről jövő adatok feldolgozásának lehetőségét (fájlbeolvasás), új adatok rögzítésének, meglévő adatok módosításának és törlésének a lehetőségét, valamint az adatok exportálását (fájlba írás)!
+A grafikus felület kialakítása során ügyeljen a felhasználóbarát elrendezésre, használja fel az összes tanult vezérlőkomponenst és új elemként határozzon meg feladatot egy NumericUpDown komponens felhasználására is.
+Készítsen egy rövid dokumentációt, amelyben megindokolja a témaválasztás okát, valamint ismerteti az új komponens (NumericUpDown) elméleti tudnivalóit!
