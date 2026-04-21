@@ -1,0 +1,7 @@
+C:\Users\balazs.david.420\source\repos\DigKult_25_maj\bin\Debug\DigKult_25_maj.exe.config
+C:\Users\balazs.david.420\source\repos\DigKult_25_maj\bin\Debug\DigKult_25_maj.exe
+C:\Users\balazs.david.420\source\repos\DigKult_25_maj\bin\Debug\DigKult_25_maj.pdb
+C:\Users\balazs.david.420\source\repos\DigKult_25_maj\obj\Debug\DigKult_25_maj.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\DigKult_25_maj\obj\Debug\DigKult_25_maj.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\DigKult_25_maj\obj\Debug\DigKult_25_maj.exe
+C:\Users\balazs.david.420\source\repos\DigKult_25_maj\obj\Debug\DigKult_25_maj.pdb
