@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\OrvosiNobeldijasokGUI\bin\Debug\OrvosiNobeldijasokGUI.exe.config
+C:\Users\balazs.david.420\source\repos\OrvosiNobeldijasokGUI\bin\Debug\OrvosiNobeldijasokGUI.exe
+C:\Users\balazs.david.420\source\repos\OrvosiNobeldijasokGUI\bin\Debug\OrvosiNobeldijasokGUI.pdb
+C:\Users\balazs.david.420\source\repos\OrvosiNobeldijasokGUI\obj\Debug\OrvosiNobeldijasokGUI.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\OrvosiNobeldijasokGUI\obj\Debug\OrvosiNobeldijasokGUI.Form1.resources
+C:\Users\balazs.david.420\source\repos\OrvosiNobeldijasokGUI\obj\Debug\OrvosiNobeldijasokGUI.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\OrvosiNobeldijasokGUI\obj\Debug\OrvosiNobeldijasokGUI.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\OrvosiNobeldijasokGUI\obj\Debug\OrvosiNobeldijasokGUI.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\OrvosiNobeldijasokGUI\obj\Debug\OrvosiNobeldijasokGUI.exe
+C:\Users\balazs.david.420\source\repos\OrvosiNobeldijasokGUI\obj\Debug\OrvosiNobeldijasokGUI.pdb

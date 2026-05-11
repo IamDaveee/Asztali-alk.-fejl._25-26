@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\TotoGUI\bin\Debug\TotoGUI.exe.config
+C:\Users\balazs.david.420\source\repos\TotoGUI\bin\Debug\TotoGUI.exe
+C:\Users\balazs.david.420\source\repos\TotoGUI\bin\Debug\TotoGUI.pdb
+C:\Users\balazs.david.420\source\repos\TotoGUI\obj\Debug\TotoGUI.csproj.AssemblyReference.cache
+C:\Users\balazs.david.420\source\repos\TotoGUI\obj\Debug\TotoGUI.Form1.resources
+C:\Users\balazs.david.420\source\repos\TotoGUI\obj\Debug\TotoGUI.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\TotoGUI\obj\Debug\TotoGUI.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\TotoGUI\obj\Debug\TotoGUI.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\TotoGUI\obj\Debug\TotoGUI.exe
+C:\Users\balazs.david.420\source\repos\TotoGUI\obj\Debug\TotoGUI.pdb
