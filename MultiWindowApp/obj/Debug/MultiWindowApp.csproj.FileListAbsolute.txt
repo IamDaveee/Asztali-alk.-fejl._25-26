@@ -1,0 +1,10 @@
+C:\Users\balazs.david.420\source\repos\MultiWindowApp\bin\Debug\MultiWindowApp.exe.config
+C:\Users\balazs.david.420\source\repos\MultiWindowApp\bin\Debug\MultiWindowApp.exe
+C:\Users\balazs.david.420\source\repos\MultiWindowApp\bin\Debug\MultiWindowApp.pdb
+C:\Users\balazs.david.420\source\repos\MultiWindowApp\obj\Debug\MultiWindowApp.MainForm.resources
+C:\Users\balazs.david.420\source\repos\MultiWindowApp\obj\Debug\MultiWindowApp.Properties.Resources.resources
+C:\Users\balazs.david.420\source\repos\MultiWindowApp\obj\Debug\MultiWindowApp.csproj.GenerateResource.cache
+C:\Users\balazs.david.420\source\repos\MultiWindowApp\obj\Debug\MultiWindowApp.csproj.CoreCompileInputs.cache
+C:\Users\balazs.david.420\source\repos\MultiWindowApp\obj\Debug\MultiWindowApp.exe
+C:\Users\balazs.david.420\source\repos\MultiWindowApp\obj\Debug\MultiWindowApp.pdb
+C:\Users\balazs.david.420\source\repos\MultiWindowApp\obj\Debug\MultiWindowApp.SecondForm.resources
