@@ -70,15 +70,6 @@ namespace IdopontFogalals
         {
             string passwordHash = PasswordHasher.HashPassword(password);
 
-            MessageBox.Show(
-                "REGISTER DEBUG" +
-                "\nPassword: [" + password + "]" +
-                "\nPassword length: " + password.Length +
-                "\nHash: " + passwordHash +
-                "\nHash length: " + passwordHash.Length +
-                "\nVerify immediately: " + PasswordHasher.VerifyPassword(password, passwordHash)
-            );
-
             using (MySqlConnection connection = Database.GetConnection())
             {
                 connection.Open();
@@ -144,28 +135,13 @@ namespace IdopontFogalals
 
             if (user == null)
             {
-                MessageBox.Show("Debug: user not found");
                 return null;
             }
 
             bool passwordCorrect = PasswordHasher.VerifyPassword(password, user.passwordHash);
 
-            MessageBox.Show(
-                "LOGIN DEBUG" +
-                "\nLogin text: [" + loginText + "]" +
-                "\nEntered password: [" + password + "]" +
-                "\nEntered password length: " + password.Length +
-                "\nFound user ID: " + user.id +
-                "\nFound username: [" + user.username + "]" +
-                "\nFound email: [" + user.email + "]" +
-                "\nStored hash: " + user.passwordHash +
-                "\nStored hash length: " + user.passwordHash.Length +
-                "\nPassword correct: " + passwordCorrect
-            );
-
             if (passwordCorrect==false)
             {
-                MessageBox.Show("Debug: password incorrect");
                 return null;
             }
 

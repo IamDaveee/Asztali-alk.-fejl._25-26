@@ -63,6 +63,8 @@ namespace IdopontFogalals
             this.btnLogout.TabIndex = 2;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Visible = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnFoglalas
             // 
@@ -72,6 +74,7 @@ namespace IdopontFogalals
             this.btnFoglalas.TabIndex = 3;
             this.btnFoglalas.Text = "Időpont foglalás";
             this.btnFoglalas.UseVisualStyleBackColor = true;
+            this.btnFoglalas.Click += new System.EventHandler(this.btnFoglalas_Click);
             // 
             // btnLekerdezes
             // 
@@ -81,6 +84,7 @@ namespace IdopontFogalals
             this.btnLekerdezes.TabIndex = 4;
             this.btnLekerdezes.Text = "Időpont lekérdezése";
             this.btnLekerdezes.UseVisualStyleBackColor = true;
+            this.btnLekerdezes.Click += new System.EventHandler(this.btnLekerdezes_Click);
             // 
             // MainForm
             // 

@@ -32,7 +32,6 @@ C:\Users\balazs.david.420\source\repos\IdopontFogalals\bin\Debug\System.Numerics
 C:\Users\balazs.david.420\source\repos\IdopontFogalals\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\balazs.david.420\source\repos\IdopontFogalals\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\balazs.david.420\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.csproj.AssemblyReference.cache
-C:\Users\balazs.david.420\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.Form1.resources
 C:\Users\balazs.david.420\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.Properties.Resources.resources
 C:\Users\balazs.david.420\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.csproj.GenerateResource.cache
 C:\Users\balazs.david.420\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.csproj.CoreCompileInputs.cache
@@ -84,3 +83,9 @@ C:\Users\Dávid\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.exe
 C:\Users\Dávid\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.pdb
 C:\Users\Dávid\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.LoginForm.resources
 C:\Users\Dávid\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.RegisterForm.resources
+C:\Users\balazs.david.420\source\repos\IdopontFogalals\bin\Debug\BCrypt-Net-Next.dll
+C:\Users\balazs.david.420\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.LoginForm.resources
+C:\Users\balazs.david.420\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.MainForm.resources
+C:\Users\balazs.david.420\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.RegisterForm.resources
+C:\Users\balazs.david.420\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.Foglalas.resources
+C:\Users\balazs.david.420\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.Lekérdezés.resources

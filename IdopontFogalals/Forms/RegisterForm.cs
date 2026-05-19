@@ -43,6 +43,11 @@ namespace IdopontFogalals
                 errors.Add("Please fill in every field.");
             }
 
+            if (ValidationHelper.IsValidEmail(email))
+            {
+                errors.Add("Email is not valid.");
+            }
+
             if (password != confirmPassword)
             {
                 errors.Add("Passwords do not match.");

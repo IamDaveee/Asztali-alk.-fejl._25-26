@@ -50,7 +50,7 @@
             this.txtPassword.Location = new System.Drawing.Point(281, 151);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 20);
-            this.txtPassword.TabIndex = 1;
+            this.txtPassword.TabIndex = 2;
             // 
             // lblPassword
             // 
@@ -66,7 +66,7 @@
             this.txtUsernameOrEmail.Location = new System.Drawing.Point(281, 99);
             this.txtUsernameOrEmail.Name = "txtUsernameOrEmail";
             this.txtUsernameOrEmail.Size = new System.Drawing.Size(100, 20);
-            this.txtUsernameOrEmail.TabIndex = 3;
+            this.txtUsernameOrEmail.TabIndex = 1;
             // 
             // lblRegister
             // 
@@ -83,7 +83,7 @@
             this.btnLogin.Location = new System.Drawing.Point(281, 196);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(100, 23);
-            this.btnLogin.TabIndex = 5;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
