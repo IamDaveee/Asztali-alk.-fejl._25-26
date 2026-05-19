@@ -68,7 +68,7 @@ namespace IdopontFogalals
             // 
             // btnFoglalas
             // 
-            this.btnFoglalas.Location = new System.Drawing.Point(153, 169);
+            this.btnFoglalas.Location = new System.Drawing.Point(173, 169);
             this.btnFoglalas.Name = "btnFoglalas";
             this.btnFoglalas.Size = new System.Drawing.Size(175, 130);
             this.btnFoglalas.TabIndex = 3;
@@ -78,7 +78,7 @@ namespace IdopontFogalals
             // 
             // btnLekerdezes
             // 
-            this.btnLekerdezes.Location = new System.Drawing.Point(497, 169);
+            this.btnLekerdezes.Location = new System.Drawing.Point(466, 169);
             this.btnLekerdezes.Name = "btnLekerdezes";
             this.btnLekerdezes.Size = new System.Drawing.Size(175, 130);
             this.btnLekerdezes.TabIndex = 4;

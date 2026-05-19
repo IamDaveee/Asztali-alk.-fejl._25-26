@@ -89,3 +89,5 @@ C:\Users\balazs.david.420\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals
 C:\Users\balazs.david.420\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.RegisterForm.resources
 C:\Users\balazs.david.420\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.Foglalas.resources
 C:\Users\balazs.david.420\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.Lekérdezés.resources
+C:\Users\Dávid\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.Foglalas.resources
+C:\Users\Dávid\source\repos\IdopontFogalals\obj\Debug\IdopontFogalals.Lekérdezés.resources

@@ -9,7 +9,7 @@ namespace IdopontFogalals
 {
     internal class Database
     {
-        private static string conn = "server=localhost;user=root;password=;database=idopontfoglalas;";
+        private static string conn = "server=100.90.64.88;port=3306;database=idopontfoglalas;uid=idopont_admin;pwd=admin;";
 
         public static MySqlConnection GetConnection()
         {

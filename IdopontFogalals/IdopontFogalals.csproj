@@ -99,10 +99,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\Database.cs" />
-    <Compile Include="Foglalas.cs">
+    <Compile Include="Forms\Foglalas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Foglalas.Designer.cs">
+    <Compile Include="Forms\Foglalas.Designer.cs">
       <DependentUpon>Foglalas.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainForm.cs">
@@ -118,10 +118,10 @@
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\SzereloHelper.cs" />
-    <Compile Include="Lekérdezés.cs">
+    <Compile Include="Forms\Lekérdezés.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lekérdezés.Designer.cs">
+    <Compile Include="Forms\Lekérdezés.Designer.cs">
       <DependentUpon>Lekérdezés.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\ReservationHelper.cs" />
@@ -138,7 +138,7 @@
     <Compile Include="Data\UserRepository.cs" />
     <Compile Include="Helpers\ValidationHelper.cs" />
     <Compile Include="Session.cs" />
-    <EmbeddedResource Include="Foglalas.resx">
+    <EmbeddedResource Include="Forms\Foglalas.resx">
       <DependentUpon>Foglalas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
@@ -150,7 +150,7 @@
     <EmbeddedResource Include="Forms\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lekérdezés.resx">
+    <EmbeddedResource Include="Forms\Lekérdezés.resx">
       <DependentUpon>Lekérdezés.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
