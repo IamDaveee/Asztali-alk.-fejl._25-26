@@ -52,6 +52,7 @@ namespace IdopontFogalals
             this.monthCalendar1.Location = new System.Drawing.Point(82, 87);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // cbHour
             // 
@@ -67,11 +68,12 @@ namespace IdopontFogalals
             "15",
             "16",
             "17"});
-            this.cbHour.Location = new System.Drawing.Point(309, 87);
+            this.cbHour.Location = new System.Drawing.Point(309, 132);
             this.cbHour.Name = "cbHour";
             this.cbHour.Size = new System.Drawing.Size(38, 21);
             this.cbHour.TabIndex = 2;
             this.cbHour.Text = "H";
+            this.cbHour.SelectedIndexChanged += new System.EventHandler(this.cbHour_SelectedIndexChanged);
             // 
             // cbMinute
             // 
@@ -79,7 +81,7 @@ namespace IdopontFogalals
             this.cbMinute.Items.AddRange(new object[] {
             "00",
             "30"});
-            this.cbMinute.Location = new System.Drawing.Point(353, 87);
+            this.cbMinute.Location = new System.Drawing.Point(353, 132);
             this.cbMinute.Name = "cbMinute";
             this.cbMinute.Size = new System.Drawing.Size(40, 21);
             this.cbMinute.TabIndex = 3;
@@ -88,7 +90,7 @@ namespace IdopontFogalals
             // cbSpecialist
             // 
             this.cbSpecialist.FormattingEnabled = true;
-            this.cbSpecialist.Location = new System.Drawing.Point(309, 146);
+            this.cbSpecialist.Location = new System.Drawing.Point(309, 87);
             this.cbSpecialist.Name = "cbSpecialist";
             this.cbSpecialist.Size = new System.Drawing.Size(121, 21);
             this.cbSpecialist.TabIndex = 4;
@@ -97,7 +99,7 @@ namespace IdopontFogalals
             // cbName
             // 
             this.cbName.FormattingEnabled = true;
-            this.cbName.Location = new System.Drawing.Point(437, 146);
+            this.cbName.Location = new System.Drawing.Point(437, 87);
             this.cbName.Name = "cbName";
             this.cbName.Size = new System.Drawing.Size(121, 21);
             this.cbName.TabIndex = 5;

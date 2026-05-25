@@ -72,7 +72,34 @@ namespace IdopontFogalals
                 }
             }
         }
+        
+        public static List<string> getTakenDates(string date, int mechanicId)
+        {
+            List<string> idopontok=new List<string>();
 
+            using (MySqlConnection connect = Database.GetConnection())
+            {
+                connect.Open();
+
+                string query = "SELECT idopont.time FROM idopont WHERE szereloId = @mechanicId AND date = @date ORDER BY time";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, connect))
+                {
+                    cmd.Parameters.AddWithValue("@mechanicId", mechanicId);
+                    cmd.Parameters.AddWithValue("@date", date);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            idopontok.Add(reader.GetTimeSpan("time").ToString(@"hh\:mm"));
+                        }
+                    }
+                }
+            }
+            return idopontok;
+        }
+        
         public static void IdopontFoglalas(int userId, int szereloId, string date, string time)
         {
             using (MySqlConnection connect=Database.GetConnection())

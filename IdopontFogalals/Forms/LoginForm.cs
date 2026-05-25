@@ -41,6 +41,7 @@ namespace IdopontFogalals
             if (user == null)
             {
                 MessageBox.Show("Incorrect login detalis");
+                txtPassword.Text = "";
                 return;
             }
 
