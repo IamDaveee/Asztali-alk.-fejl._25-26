@@ -1,0 +1,21 @@
+konyvId;cim;iro;oldalszam
+1;Az elveszett térkép;Kelemen András;284
+2;Felhők felett;Sárközi Júlia;196
+3;A csend városa;Bognár Péter;352
+4;Tavaszi árnyékok;Lendvai Eszter;221
+5;Digitális nyomok;Barta Gábor;318
+6;A hetedik kapu;Németh Balázs;407
+7;Kávé és csillagok;Vincze Dóra;174
+8;Vasárnapi utazás;Majoros Tamás;263
+9;Titkok a padláson;Fülöp Réka;289
+10;A folyó túloldalán;Hegedűs Máté;336
+11;Szelek könyve;Király Zsombor;245
+12;Éjféli jegyzetek;Szalai Nóra;198
+13;Kódolt emlékek;Dénes Viktor;374
+14;Régi házak fénye;Pálfi Emília;256
+15;A harmadik emelet;Vörös Áron;302
+16;Nyári zápor;Török Lili;167
+17;Távoli állomás;Benedek Márk;429
+18;Papírsárkány;Gál Kata;143
+19;Fekete boríték;Sipos Dávid;276
+20;Az utolsó vonat;Kocsis Laura;391

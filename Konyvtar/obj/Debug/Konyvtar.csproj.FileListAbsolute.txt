@@ -1,0 +1,13 @@
+C:\Users\Dávid\source\repos\Konyvtar\bin\Debug\Konyvtar.exe.config
+C:\Users\Dávid\source\repos\Konyvtar\bin\Debug\Konyvtar.exe
+C:\Users\Dávid\source\repos\Konyvtar\bin\Debug\Konyvtar.pdb
+C:\Users\Dávid\source\repos\Konyvtar\obj\Debug\Konyvtar.csproj.AssemblyReference.cache
+C:\Users\Dávid\source\repos\Konyvtar\obj\Debug\Konyvtar.Form1.resources
+C:\Users\Dávid\source\repos\Konyvtar\obj\Debug\Konyvtar.Properties.Resources.resources
+C:\Users\Dávid\source\repos\Konyvtar\obj\Debug\Konyvtar.csproj.GenerateResource.cache
+C:\Users\Dávid\source\repos\Konyvtar\obj\Debug\Konyvtar.csproj.CoreCompileInputs.cache
+C:\Users\Dávid\source\repos\Konyvtar\obj\Debug\Konyvtar.exe
+C:\Users\Dávid\source\repos\Konyvtar\obj\Debug\Konyvtar.pdb
+C:\Users\Dávid\source\repos\Konyvtar\obj\Debug\Konyvtar.exe.config
+C:\Users\Dávid\source\repos\Konyvtar\obj\Debug\Konyvtar.FelhasznalokForm.resources
+C:\Users\Dávid\source\repos\Konyvtar\obj\Debug\Konyvtar.Main.resources

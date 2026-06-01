@@ -1,0 +1,21 @@
+felhId;nev;szulDatum;tel;email;belepesDatum
+1;Kovács Márk;2001. 03. 14. 0:00:00;+36301234567;kovacs.mark01@example.test;2024. 01. 12. 0:00:00
+2;Nagy Anna;1998. 07. 22. 0:00:00;+36205551234;nagy.anna98@example.test;2024. 01. 18. 0:00:00
+3;Szabó Bence;2003. 11. 05. 0:00:00;+36705550123;szabo.bence03@example.test;2024. 02. 03. 0:00:00
+4;Tóth Eszter;1995. 05. 30. 0:00:00;+36305559876;toth.eszter95@example.test;2024. 02. 11. 0:00:00
+5;Varga Dániel;2000. 09. 17. 0:00:00;+36205554321;varga.daniel00@example.test;2024. 03. 02. 0:00:00
+6;Horváth Lilla;2004. 12. 08. 0:00:00;+36705557654;horvath.lilla04@example.test;2024. 03. 09. 0:00:00
+7;Kiss Levente;1997. 01. 25. 0:00:00;+36305550011;kiss.levente97@example.test;2024. 03. 21. 0:00:00
+8;Molnár Réka;2002. 04. 19. 0:00:00;+36205550022;molnar.reka02@example.test;2024. 04. 04. 0:00:00
+9;Farkas Ádám;1999. 10. 02. 0:00:00;+36705550033;farkas.adam99@example.test;2024. 04. 15. 0:00:00
+10;Balogh Petra;2001. 06. 27. 0:00:00;+36305550044;balogh.petra01@example.test;2024. 04. 28. 0:00:00
+11;Papp Máté;1996. 08. 13. 0:00:00;+36205550055;papp.mate96@example.test;2024. 05. 06. 0:00:00
+12;Takács Zsófia;2005. 02. 01. 0:00:00;+36705550066;takacs.zsofia05@example.test;2024. 05. 19. 0:00:00
+13;Juhász Nóra;2000. 12. 21. 0:00:00;+36305550077;juhasz.nora00@example.test;2024. 06. 02. 0:00:00
+14;Lakatos Gergő;1994. 03. 09. 0:00:00;+36205550088;lakatos.gergo94@example.test;2024. 06. 14. 0:00:00
+15;Mészáros Hanna;2003. 07. 16. 0:00:00;+36705550099;meszaros.hanna03@example.test;2024. 06. 27. 0:00:00
+16;Simon Kristóf;1998. 11. 28. 0:00:00;+36305550110;simon.kristof98@example.test;2024. 07. 05. 0:00:00
+17;Rácz Viktória;2002. 01. 11. 0:00:00;+36205550121;racz.viktoria02@example.test;2024. 07. 16. 0:00:00
+18;Fekete Tamás;1997. 04. 03. 0:00:00;+36705550132;fekete.tamas97@example.test;2024. 08. 01. 0:00:00
+19;Oláh Júlia;2004. 09. 29. 0:00:00;+36305550143;olah.julia04@example.test;2024. 08. 18. 0:00:00
+20;Bíró Martin;1999. 06. 06. 0:00:00;+36205550154;biro.martin99@example.test;2024. 09. 03. 0:00:00
